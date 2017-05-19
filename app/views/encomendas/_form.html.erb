@@ -1,0 +1,29 @@
+<%= form_for(@encomenda) do |f| %>
+  <% if @encomenda.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@encomenda.errors.count, "error") %> prohibited this encomenda from being saved:</h2>
+
+      <ul>
+      <% @encomenda.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :endereco_id %>
+    <%= f.collection_select :endereco_id, Endereco.order(:logradouro),:id,:logradouro, include_blank: true %>
+  </div>
+  <div class="field">
+    <%= f.label :dataentrega %><br>
+    <%= f.datetime_select :dataentrega %>
+  </div>
+  <div class="field">
+    <%= f.label :datalimitepedido %><br>
+    <%= f.datetime_select :datalimitepedido %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

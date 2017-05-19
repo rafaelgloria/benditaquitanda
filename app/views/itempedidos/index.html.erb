@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Itempedidos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Quantidade</th>
+      <th>Pedido</th>
+      <th>Produto</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @itempedidos.each do |itempedido| %>
+      <tr>
+        <td><%= itempedido.quantidade %></td>
+        <td><%= itempedido.pedido %></td>
+        <td><%= itempedido.produto %></td>
+        <td><%= link_to 'Show', itempedido %></td>
+        <td><%= link_to 'Edit', edit_itempedido_path(itempedido) %></td>
+        <td><%= link_to 'Destroy', itempedido, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Itempedido', new_itempedido_path %>

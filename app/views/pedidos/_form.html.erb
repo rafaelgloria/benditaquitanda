@@ -1,0 +1,44 @@
+<%= form_for(@pedido) do |f| %>
+  <% if @pedido.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pedido.errors.count, "error") %> prohibited this pedido from being saved:</h2>
+
+      <ul>
+      <% @pedido.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :usuario_id %><br>
+    <%= f.text_field :usuario_id %>
+  </div>
+  <div class="field">
+    <%= f.label :encomenda_id %><br>
+    <%= f.text_field :encomenda_id %>
+  </div>
+  <div>
+
+  <% @pedido.pedidoprodutos.each do |pp| %>
+    <%= pp.quantidade %>
+  <% end %>
+
+  <%= field_set_tag 'Produtos' do %>
+    <% Categorizacao.all.each do |c| %>
+      <b><%= c.nome %></b><br/>
+      <% c.produtos.each do |p| %>
+        <%= p.nome %> 
+        <%= text_field_tag "Encomenda#{p.id}", 0, size: 3, maxlength: 3 %>
+        <%= p.unidade.nome %><br/>
+      <% end %>
+    <% end %>
+  <% end %>
+
+  </div>
+  <br/>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

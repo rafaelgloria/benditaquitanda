@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  categorizacao_id: 
+  unidade_id: 
+  nome: MyString
+  descricao: MyString
+  valorunitario: 1.5
+
+two:
+  categorizacao_id: 
+  unidade_id: 
+  nome: MyString
+  descricao: MyString
+  valorunitario: 1.5

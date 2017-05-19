@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Categorizacaos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Descricao</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @categorizacaos.each do |categorizacao| %>
+      <tr>
+        <td><%= categorizacao.nome %></td>
+        <td><%= categorizacao.descricao %></td>
+        <td><%= link_to 'Show', categorizacao %></td>
+        <td><%= link_to 'Edit', edit_categorizacao_path(categorizacao) %></td>
+        <td><%= link_to 'Destroy', categorizacao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Categorizacao', new_categorizacao_path %>
