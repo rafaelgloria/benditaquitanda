@@ -15,6 +15,9 @@ class PedidosController < ApplicationController
   # GET /pedidos/new
   def new
     @pedido = Pedido.new
+    Produto.all.each do |prod|
+      @pedido.itempedidos.build(quantidade: 0, produto: prod)
+    end
   end
 
   # GET /pedidos/1/edit
@@ -24,6 +27,11 @@ class PedidosController < ApplicationController
   # POST /pedidos
   # POST /pedidos.json
   def create
+
+    @pedido.itempedidos do |ip|
+      
+    end
+
     @pedido = Pedido.new(pedido_params)
 
     respond_to do |format|
@@ -69,6 +77,6 @@ class PedidosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pedido_params
-      params.require(:pedido).permit(:usuario_id, :encomenda_id)
+      params.require(:pedido).permit(:usuario_id, :encomenda_id, :itempedidos_attributes => [:id, :pedido_id, :produto_id, :quantidade])
     end
 end

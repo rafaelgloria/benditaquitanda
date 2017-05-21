@@ -13,29 +13,20 @@
 
   <div class="field">
     <%= f.label :usuario_id %><br>
-    <%= f.text_field :usuario_id %>
+    <%= f.collection_select :usuario_id, Usuario.order(:nome),:id,:nome, include_blank: true %>
   </div>
   <div class="field">
     <%= f.label :encomenda_id %><br>
-    <%= f.text_field :encomenda_id %>
+    <%= f.collection_select :encomenda_id, Encomenda.order(:dataentrega),:id,:dataentrega, include_blank: true %>
   </div>
   <div>
-
-  <% @pedido.pedidoprodutos.each do |pp| %>
-    <%= pp.quantidade %>
-  <% end %>
-
-  <%= field_set_tag 'Produtos' do %>
-    <% Categorizacao.all.each do |c| %>
-      <b><%= c.nome %></b><br/>
-      <% c.produtos.each do |p| %>
-        <%= p.nome %> 
-        <%= text_field_tag "Encomenda#{p.id}", 0, size: 3, maxlength: 3 %>
-        <%= p.unidade.nome %><br/>
+    <%= field_set_tag 'Produtos' do %>
+      <% @pedido.itempedidos.each do |ip| %>
+        <%= ip.produto.nome %>
+        <input type="text" value="<%= ip.quantidade %>" name="pedido[itempedidos_attributes][<%= ip.produto.id %>][quantidade]" id="pedido_itempedidos_attributes_<%= ip.produto.id %>_quantidade">
+        <%= ip.produto.unidade.nome %><br/>
       <% end %>
     <% end %>
-  <% end %>
-
   </div>
   <br/>
   <div class="actions">
