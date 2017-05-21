@@ -20,13 +20,13 @@
     <%= f.collection_select :encomenda_id, Encomenda.order(:dataentrega),:id,:dataentrega, include_blank: true %>
   </div>
   <div>
-    <%= field_set_tag 'Produtos' do %>
-      <% @pedido.itempedidos.each do |ip| %>
-        <%= ip.produto.nome %>
-        <input type="text" value="<%= ip.quantidade %>" name="pedido[itempedidos_attributes][<%= ip.produto.id %>][quantidade]" id="pedido_itempedidos_attributes_<%= ip.produto.id %>_quantidade">
-        <%= ip.produto.unidade.nome %><br/>
-      <% end %>
-    <% end %>
+    <%= f.fields_for :itempedidos do |ff| %>
+    <div class="field">
+      <%= label_tag ff.object.produto.nome %>
+      <%= ff.text_field :quantidade %>
+      <%= label_tag ff.object.produto.unidade.descricao %>
+    </div>
+  <% end %>
   </div>
   <br/>
   <div class="actions">

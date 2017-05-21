@@ -19,3 +19,13 @@ velho
       <% end %>
     <% end %>
   <% end %>
+
+
+
+  <%= field_set_tag 'Produtos' do %>
+      <% @pedido.itempedidos.each do |ip| %>
+        <%= ip.produto.nome %>
+        <input type="text" value="<%= ip.quantidade %>" name="pedido[itempedidos_attributes][<%= ip.produto.id %>][quantidade]" id="pedido_itempedidos_attributes_<%= ip.produto.id %>_quantidade">
+        <%= ip.produto.unidade.nome %><br/>
+      <% end %>
+    <% end %>

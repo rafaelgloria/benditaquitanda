@@ -28,11 +28,13 @@ class PedidosController < ApplicationController
   # POST /pedidos.json
   def create
 
-    @pedido.itempedidos do |ip|
-      
-    end
-
     @pedido = Pedido.new(pedido_params)
+
+    #contador = 1
+    #@pedido.itempedidos do |ip|
+    #  ip.produto.id = contador
+    #  contador += 1
+    #end
 
     respond_to do |format|
       if @pedido.save
