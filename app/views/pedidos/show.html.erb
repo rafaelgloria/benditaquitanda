@@ -2,12 +2,12 @@
 
 <p>
   <strong>Usuario:</strong>
-  <%= @pedido.usuario %>
+  <%= @pedido.usuario.nome %>
 </p>
 
 <p>
   <strong>Encomenda:</strong>
-  <%= @pedido.encomenda %>
+  <%= @pedido.encomenda.dataentrega %>
 </p>
 
 <%= link_to 'Edit', edit_pedido_path(@pedido) %> |
