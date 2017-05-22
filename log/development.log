@@ -14708,3 +14708,2771 @@ Processing by EncomendasController#index as HTML
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
   Rendered encomendas/index.html.erb within layouts/application (5.0ms)
 Completed 200 OK in 54ms (Views: 52.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 22:54:56 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 669ms (Views: 663.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 22:55:36 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 80ms (Views: 79.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/scaffolds.self-930de29a197b8d70781cdae9e3aab47092b733c019825bb1b6dc3ba4c999de26.css?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-05-21 22:55:36 -0300
+
+
+Started GET "/" for ::1 at 2017-05-21 22:55:59 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 59ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/scaffolds.self-930de29a197b8d70781cdae9e3aab47092b733c019825bb1b6dc3ba4c999de26.css?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-05-21 22:55:59 -0300
+
+
+Started GET "/categorizacaos" for ::1 at 2017-05-21 22:56:09 -0300
+Processing by CategorizacaosController#index as HTML
+  [1m[35mCategorizacao Load (1.6ms)[0m  SELECT "categorizacaos".* FROM "categorizacaos"
+  Rendered categorizacaos/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 65ms (Views: 60.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/categorizacaos/new" for ::1 at 2017-05-21 22:56:14 -0300
+Processing by CategorizacaosController#new as HTML
+  Rendered categorizacaos/_form.html.erb (3.8ms)
+  Rendered categorizacaos/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 68ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categorizacaos" for ::1 at 2017-05-21 22:56:17 -0300
+Processing by CategorizacaosController#index as HTML
+  [1m[36mCategorizacao Load (0.2ms)[0m  [1mSELECT "categorizacaos".* FROM "categorizacaos"[0m
+  Rendered categorizacaos/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 120ms (Views: 119.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 22:56:18 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 58ms (Views: 57.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/enderecos" for ::1 at 2017-05-21 22:56:21 -0300
+Processing by EnderecosController#index as HTML
+  [1m[35mEndereco Load (0.3ms)[0m  SELECT "enderecos".* FROM "enderecos"
+  Rendered enderecos/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 57ms (Views: 54.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 22:56:27 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/unidades" for ::1 at 2017-05-21 22:56:29 -0300
+Processing by UnidadesController#index as HTML
+  [1m[36mUnidade Load (0.4ms)[0m  [1mSELECT "unidades".* FROM "unidades"[0m
+  Rendered unidades/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 62ms (Views: 60.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 22:56:35 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios" for ::1 at 2017-05-21 22:56:36 -0300
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.3ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 22:56:43 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios" for ::1 at 2017-05-21 22:56:48 -0300
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/usuarios/new" for ::1 at 2017-05-21 22:56:49 -0300
+Processing by UsuariosController#new as HTML
+  Rendered usuarios/_form.html.erb (4.1ms)
+  Rendered usuarios/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 65ms (Views: 64.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios" for ::1 at 2017-05-21 22:57:03 -0300
+Processing by UsuariosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C3QZx3Spx6xQzG68F7R6j63y8pvDyXr01lx5lJWVRoXQ0qNJV74uCYa95TGmbPJCTm0fPxRlqGO+JbiJfQiaXw==", "usuario"=>{"nome"=>"Vicente", "email"=>"vicente@mail.com", "senha"=>"123456", "admin"=>"0"}, "commit"=>"Create Usuario"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "usuarios" ("nome", "email", "senha", "admin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nome", "Vicente"], ["email", "vicente@mail.com"], ["senha", "123456"], ["admin", "f"], ["created_at", "2017-05-22 01:57:03.129861"], ["updated_at", "2017-05-22 01:57:03.129861"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/usuarios/3
+Completed 302 Found in 8ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/usuarios/3" for ::1 at 2017-05-21 22:57:03 -0300
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUsuario Load (0.3ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered usuarios/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 44ms (Views: 41.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/usuarios" for ::1 at 2017-05-21 22:57:05 -0300
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 22:57:08 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 41ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/encomendas" for ::1 at 2017-05-21 22:57:18 -0300
+Processing by EncomendasController#index as HTML
+  [1m[36mEncomenda Load (0.3ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"[0m
+  [1m[35mEndereco Load (0.1ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/encomendas/new" for ::1 at 2017-05-21 22:57:24 -0300
+Processing by EncomendasController#new as HTML
+  [1m[35mEndereco Load (0.2ms)[0m  SELECT "enderecos".* FROM "enderecos"  ORDER BY "enderecos"."logradouro" ASC
+  Rendered encomendas/_form.html.erb (9.1ms)
+  Rendered encomendas/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 82ms (Views: 81.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/encomendas" for ::1 at 2017-05-21 22:58:08 -0300
+Processing by EncomendasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w1EB6/k5kCfJR50kVVWOlwaFy6Zi3i0WxC0L7hsd1vQY97tl2i55gh82FqnkjQZa5RomArVy/4GsVMrz84AKLg==", "encomenda"=>{"endereco_id"=>"1", "dataentrega(1i)"=>"2017", "dataentrega(2i)"=>"5", "dataentrega(3i)"=>"27", "dataentrega(4i)"=>"11", "dataentrega(5i)"=>"00", "datalimitepedido(1i)"=>"2017", "datalimitepedido(2i)"=>"5", "datalimitepedido(3i)"=>"26", "datalimitepedido(4i)"=>"11", "datalimitepedido(5i)"=>"00"}, "commit"=>"Create Encomenda"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "encomendas" ("endereco_id", "dataentrega", "datalimitepedido", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["endereco_id", 1], ["dataentrega", "2017-05-27 11:00:00.000000"], ["datalimitepedido", "2017-05-26 11:00:00.000000"], ["created_at", "2017-05-22 01:58:08.213808"], ["updated_at", "2017-05-22 01:58:08.213808"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/encomendas/3
+Completed 302 Found in 6ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/encomendas/3" for ::1 at 2017-05-21 22:58:08 -0300
+Processing by EncomendasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered encomendas/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/encomendas" for ::1 at 2017-05-21 22:58:12 -0300
+Processing by EncomendasController#index as HTML
+  [1m[35mEncomenda Load (0.2ms)[0m  SELECT "encomendas".* FROM "encomendas"
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/encomendas/1" for ::1 at 2017-05-21 22:58:21 -0300
+Processing by EncomendasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5Ny5BHo0JHilPhYAq3GCjg1rMNjg/yqUMwlZSCOsfYs/egOKWSPN3XNPnY0aqQpD7vTdfDdT+ANbcJhVyzGhUQ==", "id"=>"1"}
+  [1m[35mEncomenda Load (0.2ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  DELETE FROM "encomendas" WHERE "encomendas"."id" = ?  [["id", 1]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/encomendas
+Completed 302 Found in 4ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/encomendas" for ::1 at 2017-05-21 22:58:21 -0300
+Processing by EncomendasController#index as HTML
+  [1m[35mEncomenda Load (0.2ms)[0m  SELECT "encomendas".* FROM "encomendas"
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/encomendas/2" for ::1 at 2017-05-21 22:58:26 -0300
+Processing by EncomendasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wPzuRdjaRVapIVK9XyQ083563C3ReBZhNcacNNaCLd8bWlTL+82s839Q2TDu/Lw+neUxiQbUxPZdv10pPh/xBQ==", "id"=>"2"}
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "encomendas" WHERE "encomendas"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/encomendas
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/encomendas" for ::1 at 2017-05-21 22:58:26 -0300
+Processing by EncomendasController#index as HTML
+  [1m[36mEncomenda Load (0.2ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"[0m
+  [1m[35mEndereco Load (0.1ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 22:58:33 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-21 22:58:45 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mPedido Load (0.2ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `dataentrega' for nil:NilClass):
+    15:     <% @pedidos.each do |pedido| %>
+    16:       <tr>
+    17:         <td><%= pedido.usuario.nome %></td>
+    18:         <td><%= pedido.encomenda.dataentrega %></td>
+    19:         <td><%= link_to 'Show', pedido %></td>
+    20:         <td><%= link_to 'Edit', edit_pedido_path(pedido) %></td>
+    21:         <td><%= link_to 'Destroy', pedido, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  app/views/pedidos/index.html.erb:18:in `block in _app_views_pedidos_index_html_erb__4481774937971357075_70297656250440'
+  app/views/pedidos/index.html.erb:15:in `_app_views_pedidos_index_html_erb__4481774937971357075_70297656250440'
+
+
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.4ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (102.0ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (2.3ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (84.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (207.5ms)
+  [1m[35mPedido Load (1.8ms)[0m  SELECT "pedidos".* FROM "pedidos"
+  [1m[36mPedido Load (0.4ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+
+
+Started GET "/pedidos" for ::1 at 2017-05-21 22:59:42 -0300
+Processing by PedidosController#index as HTML
+  [1m[35mPedido Load (0.2ms)[0m  SELECT "pedidos".* FROM "pedidos"
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `dataentrega' for nil:NilClass):
+    15:     <% @pedidos.each do |pedido| %>
+    16:       <tr>
+    17:         <td><%= pedido.usuario.nome %></td>
+    18:         <td><%= pedido.encomenda.dataentrega %></td>
+    19:         <td><%= link_to 'Show', pedido %></td>
+    20:         <td><%= link_to 'Edit', edit_pedido_path(pedido) %></td>
+    21:         <td><%= link_to 'Destroy', pedido, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  app/views/pedidos/index.html.erb:18:in `block in _app_views_pedidos_index_html_erb__4481774937971357075_70297656250440'
+  app/views/pedidos/index.html.erb:15:in `_app_views_pedidos_index_html_erb__4481774937971357075_70297656250440'
+
+
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.4ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (105.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (4.1ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (88.1ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (205.0ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-21 23:01:00 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mPedido Load (0.2ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `dataentrega' for nil:NilClass):
+    15:     <% @pedidos.each do |pedido| %>
+    16:       <tr>
+    17:         <td><%= pedido.usuario.nome %></td>
+    18:         <td><%= pedido.encomenda.dataentrega %></td>
+    19:         <td><%= link_to 'Show', pedido %></td>
+    20:         <td><%= link_to 'Edit', edit_pedido_path(pedido) %></td>
+    21:         <td><%= link_to 'Destroy', pedido, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  app/views/pedidos/index.html.erb:18:in `block in _app_views_pedidos_index_html_erb__4481774937971357075_70297656250440'
+  app/views/pedidos/index.html.erb:15:in `_app_views_pedidos_index_html_erb__4481774937971357075_70297656250440'
+
+
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (99.1ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (96.6ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (207.9ms)
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:01:01 -0300
+Processing by PedidosController#new as HTML
+  [1m[35mProduto Load (0.3ms)[0m  SELECT "produtos".* FROM "produtos"
+  [1m[36mUsuario Load (0.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC[0m
+  [1m[35mEncomenda Load (0.3ms)[0m  SELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC
+  [1m[36mUnidade Load (0.2ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUnidade Load (0.2ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered pedidos/_form.html.erb (12.1ms)
+  Rendered pedidos/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 85ms (Views: 78.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-21 23:01:08 -0300
+Processing by PedidosController#index as HTML
+  [1m[35mPedido Load (0.2ms)[0m  SELECT "pedidos".* FROM "pedidos"
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `dataentrega' for nil:NilClass):
+    15:     <% @pedidos.each do |pedido| %>
+    16:       <tr>
+    17:         <td><%= pedido.usuario.nome %></td>
+    18:         <td><%= pedido.encomenda.dataentrega %></td>
+    19:         <td><%= link_to 'Show', pedido %></td>
+    20:         <td><%= link_to 'Edit', edit_pedido_path(pedido) %></td>
+    21:         <td><%= link_to 'Destroy', pedido, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  app/views/pedidos/index.html.erb:18:in `block in _app_views_pedidos_index_html_erb__4481774937971357075_70297656250440'
+  app/views/pedidos/index.html.erb:15:in `_app_views_pedidos_index_html_erb__4481774937971357075_70297656250440'
+
+
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (105.3ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (84.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (193.1ms)
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:01:09 -0300
+Processing by PedidosController#new as HTML
+  [1m[36mProduto Load (0.3ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC
+  [1m[36mEncomenda Load (0.2ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC[0m
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUnidade Load (0.2ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered pedidos/_form.html.erb (8.4ms)
+  Rendered pedidos/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 67ms (Views: 62.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-21 23:01:28 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mPedido Load (0.2ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:01:28 -0300
+Processing by PedidosController#new as HTML
+  [1m[35mProduto Load (0.5ms)[0m  SELECT "produtos".* FROM "produtos"
+  [1m[36mUsuario Load (0.4ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC[0m
+  [1m[35mEncomenda Load (0.2ms)[0m  SELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered pedidos/_form.html.erb (20.2ms)
+  Rendered pedidos/new.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 93ms (Views: 78.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/scaffolds.self-930de29a197b8d70781cdae9e3aab47092b733c019825bb1b6dc3ba4c999de26.css?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for ::1 at 2017-05-21 23:01:28 -0300
+
+
+Started DELETE "/pedidos/7" for ::1 at 2017-05-21 23:01:35 -0300
+Processing by PedidosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"e5SpHct0ePyaSWHPaXqw58XD/igmjr+o0OKs+xfjr12gMhOT6GORWUw46kLYojgqJlwTjPEibT+4m23m/35zhw==", "id"=>"7"}
+  [1m[35mPedido Load (0.1ms)[0m  SELECT  "pedidos".* FROM "pedidos" WHERE "pedidos"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "pedidos" WHERE "pedidos"."id" = ?  [["id", 7]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pedidos
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-21 23:01:35 -0300
+Processing by PedidosController#index as HTML
+  [1m[35mPedido Load (0.2ms)[0m  SELECT "pedidos".* FROM "pedidos"
+  Rendered pedidos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 23:01:37 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 42ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-21 23:01:39 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mPedido Load (0.2ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  Rendered pedidos/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 59ms (Views: 58.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:01:44 -0300
+Processing by PedidosController#new as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT "produtos".* FROM "produtos"
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC[0m
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered pedidos/_form.html.erb (6.7ms)
+  Rendered pedidos/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 59ms (Views: 54.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/pedidos" for ::1 at 2017-05-21 23:02:33 -0300
+Processing by PedidosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KgMlYaVnRbarWnwD3xzvXg7aCj9DWQ0OtMA5jlq951rxpZ/vhnCsE30r945uxGeT7UXnm5T135ncufiTsiA7gA==", "pedido"=>{"usuario_id"=>"2", "encomenda_id"=>"3", "itempedidos_attributes"=>{"0"=>{"quantidade"=>"2", "produto_id"=>"1"}, "1"=>{"quantidade"=>"6", "produto_id"=>"2"}, "2"=>{"quantidade"=>"5", "produto_id"=>"3"}}}, "commit"=>"Create Pedido"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "pedidos" ("usuario_id", "encomenda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["usuario_id", 2], ["encomenda_id", 3], ["created_at", "2017-05-22 02:02:33.697594"], ["updated_at", "2017-05-22 02:02:33.697594"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "itempedidos" ("produto_id", "quantidade", "pedido_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["produto_id", 1], ["quantidade", 2], ["pedido_id", 8], ["created_at", "2017-05-22 02:02:33.699033"], ["updated_at", "2017-05-22 02:02:33.699033"]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "itempedidos" ("produto_id", "quantidade", "pedido_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["produto_id", 2], ["quantidade", 6], ["pedido_id", 8], ["created_at", "2017-05-22 02:02:33.700062"], ["updated_at", "2017-05-22 02:02:33.700062"]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "itempedidos" ("produto_id", "quantidade", "pedido_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["produto_id", 3], ["quantidade", 5], ["pedido_id", 8], ["created_at", "2017-05-22 02:02:33.700915"], ["updated_at", "2017-05-22 02:02:33.700915"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pedidos/8
+Completed 302 Found in 11ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/pedidos/8" for ::1 at 2017-05-21 23:02:33 -0300
+Processing by PedidosController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPedido Load (0.1ms)[0m  SELECT  "pedidos".* FROM "pedidos" WHERE "pedidos"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered pedidos/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-21 23:02:37 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mPedido Load (0.2ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered pedidos/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-21 23:02:45 -0300
+Processing by PedidosController#index as HTML
+  [1m[35mPedido Load (0.2ms)[0m  SELECT "pedidos".* FROM "pedidos"
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered pedidos/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:02:45 -0300
+Processing by PedidosController#new as HTML
+  [1m[36mProduto Load (0.3ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mUsuario Load (0.5ms)[0m  SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC
+  [1m[36mEncomenda Load (0.2ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC[0m
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered pedidos/_form.html.erb (18.6ms)
+  Rendered pedidos/new.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 94ms (Views: 88.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:02:45 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:02:45 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:02:45 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:02:45 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/scaffolds.self-930de29a197b8d70781cdae9e3aab47092b733c019825bb1b6dc3ba4c999de26.css?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-05-21 23:02:46 -0300
+
+
+Started GET "/pedidos/8" for ::1 at 2017-05-21 23:02:51 -0300
+Processing by PedidosController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPedido Load (0.1ms)[0m  [1mSELECT  "pedidos".* FROM "pedidos" WHERE "pedidos"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered pedidos/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 47ms (Views: 45.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-21 23:02:52 -0300
+Processing by PedidosController#index as HTML
+  [1m[35mPedido Load (0.3ms)[0m  SELECT "pedidos".* FROM "pedidos"
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mEncomenda Load (0.2ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered pedidos/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 67ms (Views: 65.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pedidos/8/edit" for ::1 at 2017-05-21 23:02:57 -0300
+Processing by PedidosController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPedido Load (0.2ms)[0m  [1mSELECT  "pedidos".* FROM "pedidos" WHERE "pedidos"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC[0m
+  [1m[35mItempedido Load (0.1ms)[0m  SELECT "itempedidos".* FROM "itempedidos" WHERE "itempedidos"."pedido_id" = ?  [["pedido_id", 8]]
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered pedidos/_form.html.erb (10.1ms)
+  Rendered pedidos/edit.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 82ms (Views: 79.3ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/pedidos/8" for ::1 at 2017-05-21 23:03:05 -0300
+Processing by PedidosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"crhtPGkAa2++6cpVQvSPybI7M+a2eo+aGnXKL/qCWRWpHteySheCymiYQdjzLAcEUaTeQmHWXQ1yDAsyEh+Fzw==", "pedido"=>{"usuario_id"=>"2", "encomenda_id"=>"3", "itempedidos_attributes"=>{"0"=>{"quantidade"=>"2", "produto_id"=>"1", "id"=>"22"}, "1"=>{"quantidade"=>"10", "produto_id"=>"2", "id"=>"23"}, "2"=>{"quantidade"=>"5", "produto_id"=>"3", "id"=>"24"}}}, "commit"=>"Update Pedido", "id"=>"8"}
+  [1m[36mPedido Load (0.1ms)[0m  [1mSELECT  "pedidos".* FROM "pedidos" WHERE "pedidos"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mItempedido Load (0.6ms)[0m  [1mSELECT "itempedidos".* FROM "itempedidos" WHERE "itempedidos"."pedido_id" = ? AND "itempedidos"."id" IN (22, 23, 24)[0m  [["pedido_id", 8]]
+  [1m[35mSQL (0.3ms)[0m  UPDATE "itempedidos" SET "quantidade" = ?, "updated_at" = ? WHERE "itempedidos"."id" = ?  [["quantidade", 10], ["updated_at", "2017-05-22 02:03:05.824154"], ["id", 23]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pedidos/8
+Completed 302 Found in 10ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/pedidos/8" for ::1 at 2017-05-21 23:03:05 -0300
+Processing by PedidosController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPedido Load (0.1ms)[0m  SELECT  "pedidos".* FROM "pedidos" WHERE "pedidos"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered pedidos/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-21 23:03:08 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mPedido Load (0.2ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered pedidos/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 47ms (Views: 45.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pedidos/8" for ::1 at 2017-05-21 23:03:12 -0300
+Processing by PedidosController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPedido Load (0.1ms)[0m  SELECT  "pedidos".* FROM "pedidos" WHERE "pedidos"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered pedidos/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 44ms (Views: 42.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-21 23:03:14 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mPedido Load (0.3ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered pedidos/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 73ms (Views: 71.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 23:03:19 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos" for ::1 at 2017-05-21 23:03:21 -0300
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.3ms)[0m  SELECT "produtos".* FROM "produtos"
+  [1m[36mCategorizacao Load (0.1ms)[0m  [1mSELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCategorizacao Load (0.1ms)[0m  [1mSELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered produtos/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 23:03:24 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 57ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categorizacaos" for ::1 at 2017-05-21 23:03:26 -0300
+Processing by CategorizacaosController#index as HTML
+  [1m[36mCategorizacao Load (0.2ms)[0m  [1mSELECT "categorizacaos".* FROM "categorizacaos"[0m
+  Rendered categorizacaos/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 23:03:29 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos" for ::1 at 2017-05-21 23:03:31 -0300
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT "produtos".* FROM "produtos"
+  [1m[36mCategorizacao Load (0.1ms)[0m  [1mSELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCategorizacao Load (0.1ms)[0m  [1mSELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered produtos/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/produtos/new" for ::1 at 2017-05-21 23:03:37 -0300
+Processing by ProdutosController#new as HTML
+  [1m[36mCategorizacao Load (0.2ms)[0m  [1mSELECT "categorizacaos".* FROM "categorizacaos"  ORDER BY "categorizacaos"."nome" ASC[0m
+  [1m[35mUnidade Load (0.2ms)[0m  SELECT "unidades".* FROM "unidades"  ORDER BY "unidades"."nome" ASC
+  Rendered produtos/_form.html.erb (4.7ms)
+  Rendered produtos/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/produtos" for ::1 at 2017-05-21 23:04:46 -0300
+Processing by ProdutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Z/ji03Lt+/RU7WcI7zGQHpjfq5g6Gl/MMP2TbnLDL0qOVkFbtxeSgciPhGSZE6NmfyTCrdEu+hYujdQUVbQZw==", "produto"=>{"categorizacao_id"=>"1", "unidade_id"=>"4", "nome"=>"Tomate", "descricao"=>"(500 g)", "valorunitario"=>"10.5"}, "commit"=>"Create Produto"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "produtos" ("categorizacao_id", "unidade_id", "nome", "descricao", "valorunitario", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["categorizacao_id", 1], ["unidade_id", 4], ["nome", "Tomate"], ["descricao", "(500 g)"], ["valorunitario", 10.5], ["created_at", "2017-05-22 02:04:46.637496"], ["updated_at", "2017-05-22 02:04:46.637496"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/produtos/4
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/produtos/4" for ::1 at 2017-05-21 23:04:46 -0300
+Processing by ProdutosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mProduto Load (0.1ms)[0m  SELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCategorizacao Load (0.1ms)[0m  [1mSELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered produtos/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 23:04:49 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-21 23:04:51 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mPedido Load (0.2ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered pedidos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 82ms (Views: 80.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pedidos/8/edit" for ::1 at 2017-05-21 23:04:54 -0300
+Processing by PedidosController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPedido Load (0.2ms)[0m  SELECT  "pedidos".* FROM "pedidos" WHERE "pedidos"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC[0m
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC
+  [1m[36mItempedido Load (0.1ms)[0m  [1mSELECT "itempedidos".* FROM "itempedidos" WHERE "itempedidos"."pedido_id" = ?[0m  [["pedido_id", 8]]
+  [1m[35mProduto Load (0.1ms)[0m  SELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mProduto Load (0.1ms)[0m  SELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mProduto Load (0.1ms)[0m  SELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered pedidos/_form.html.erb (9.2ms)
+  Rendered pedidos/edit.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 57ms (Views: 55.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-21 23:04:56 -0300
+Processing by PedidosController#index as HTML
+  [1m[35mPedido Load (0.2ms)[0m  SELECT "pedidos".* FROM "pedidos"
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered pedidos/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 56ms (Views: 54.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:04:58 -0300
+Processing by PedidosController#new as HTML
+  [1m[36mProduto Load (0.3ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mUsuario Load (0.3ms)[0m  SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC[0m
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered pedidos/_form.html.erb (7.0ms)
+  Rendered pedidos/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 53ms (Views: 48.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-21 23:05:51 -0300
+Processing by PedidosController#index as HTML
+  [1m[35mPedido Load (0.2ms)[0m  SELECT "pedidos".* FROM "pedidos"
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered pedidos/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 23:05:52 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 56ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos" for ::1 at 2017-05-21 23:05:54 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered produtos/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/produtos/4/edit" for ::1 at 2017-05-21 23:06:01 -0300
+Processing by ProdutosController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mProduto Load (0.1ms)[0m  SELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCategorizacao Load (0.3ms)[0m  [1mSELECT "categorizacaos".* FROM "categorizacaos"  ORDER BY "categorizacaos"."nome" ASC[0m
+  [1m[35mUnidade Load (0.3ms)[0m  SELECT "unidades".* FROM "unidades"  ORDER BY "unidades"."nome" ASC
+  Rendered produtos/_form.html.erb (6.9ms)
+  Rendered produtos/edit.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 59ms (Views: 56.2ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/produtos/4" for ::1 at 2017-05-21 23:06:10 -0300
+Processing by ProdutosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HUt7hJLwju4Nsehfpo4R3/mJEy/smh6/PX9pS7pQJQnG7cEKsednS9vAY9IXVpkSGhb+izs2zChVBqhWUs350w==", "produto"=>{"categorizacao_id"=>"1", "unidade_id"=>"4", "nome"=>"Tomate", "descricao"=>"(400 g)", "valorunitario"=>"10.5"}, "commit"=>"Update Produto", "id"=>"4"}
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "produtos" SET "descricao" = ?, "updated_at" = ? WHERE "produtos"."id" = ?[0m  [["descricao", "(400 g)"], ["updated_at", "2017-05-22 02:06:10.198010"], ["id", 4]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/produtos/4
+Completed 302 Found in 6ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/produtos/4" for ::1 at 2017-05-21 23:06:10 -0300
+Processing by ProdutosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered produtos/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/produtos" for ::1 at 2017-05-21 23:06:13 -0300
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT "produtos".* FROM "produtos"
+  [1m[36mCategorizacao Load (0.1ms)[0m  [1mSELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCategorizacao Load (0.1ms)[0m  [1mSELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered produtos/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 23:06:15 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 58ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-21 23:06:17 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mPedido Load (0.2ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered pedidos/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 61ms (Views: 59.3ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/pedidos/8" for ::1 at 2017-05-21 23:06:22 -0300
+Processing by PedidosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3c0DQa/Ff9awh74V8S2E14mKyy68IphdzX8TpwVY+uAGa7nPjNKWc2b2NZhA9QwaahUmimuOSsqlBtK67cUmOg==", "id"=>"8"}
+  [1m[35mPedido Load (0.2ms)[0m  SELECT  "pedidos".* FROM "pedidos" WHERE "pedidos"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "pedidos" WHERE "pedidos"."id" = ?  [["id", 8]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pedidos
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-21 23:06:22 -0300
+Processing by PedidosController#index as HTML
+  [1m[35mPedido Load (0.2ms)[0m  SELECT "pedidos".* FROM "pedidos"
+  Rendered pedidos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:06:58 -0300
+Processing by PedidosController#new as HTML
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC[0m
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered pedidos/_form.html.erb (9.6ms)
+  Rendered pedidos/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 76ms (Views: 71.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-21 23:07:19 -0300
+Processing by PedidosController#index as HTML
+  [1m[35mPedido Load (0.2ms)[0m  SELECT "pedidos".* FROM "pedidos"
+  Rendered pedidos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 23:07:23 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/unidades" for ::1 at 2017-05-21 23:07:24 -0300
+Processing by UnidadesController#index as HTML
+  [1m[36mUnidade Load (0.2ms)[0m  [1mSELECT "unidades".* FROM "unidades"[0m
+  Rendered unidades/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/unidades/new" for ::1 at 2017-05-21 23:07:25 -0300
+Processing by UnidadesController#new as HTML
+  Rendered unidades/_form.html.erb (1.8ms)
+  Rendered unidades/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/unidades" for ::1 at 2017-05-21 23:07:40 -0300
+Processing by UnidadesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kd5rLLKVA+AMbs8gXeHaJNB8w1QHwXjSGlxjr9iQW/TyeNGikYLqRdofRK3sOVLpM+Mu8NBtqkVyJaKyMA2HLg==", "unidade"=>{"nome"=>"vazia", "descricao"=>""}, "commit"=>"Create Unidade"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "unidades" ("nome", "descricao", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["nome", "vazia"], ["descricao", ""], ["created_at", "2017-05-22 02:07:40.964347"], ["updated_at", "2017-05-22 02:07:40.964347"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/unidades/5
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/unidades/5" for ::1 at 2017-05-21 23:07:40 -0300
+Processing by UnidadesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered unidades/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/unidades" for ::1 at 2017-05-21 23:07:42 -0300
+Processing by UnidadesController#index as HTML
+  [1m[35mUnidade Load (0.3ms)[0m  SELECT "unidades".* FROM "unidades"
+  Rendered unidades/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 23:07:44 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos" for ::1 at 2017-05-21 23:07:45 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered produtos/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 56ms (Views: 54.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/produtos/4/edit" for ::1 at 2017-05-21 23:07:48 -0300
+Processing by ProdutosController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCategorizacao Load (0.2ms)[0m  [1mSELECT "categorizacaos".* FROM "categorizacaos"  ORDER BY "categorizacaos"."nome" ASC[0m
+  [1m[35mUnidade Load (0.2ms)[0m  SELECT "unidades".* FROM "unidades"  ORDER BY "unidades"."nome" ASC
+  Rendered produtos/_form.html.erb (4.4ms)
+  Rendered produtos/edit.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/produtos/4" for ::1 at 2017-05-21 23:07:52 -0300
+Processing by ProdutosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JwnjZSsdP+gFKLEKz26/ndYb5dMvqt4mnx/eyxgm/Nb8r1nrCArWTdNZOod+tjdQNYQId/gGDLH3Zh/W8LsgDA==", "produto"=>{"categorizacao_id"=>"1", "unidade_id"=>"5", "nome"=>"Tomate", "descricao"=>"(400 g)", "valorunitario"=>"10.5"}, "commit"=>"Update Produto", "id"=>"4"}
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "produtos" SET "unidade_id" = ?, "updated_at" = ? WHERE "produtos"."id" = ?[0m  [["unidade_id", 5], ["updated_at", "2017-05-22 02:07:52.522640"], ["id", 4]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/produtos/4
+Completed 302 Found in 7ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/produtos/4" for ::1 at 2017-05-21 23:07:52 -0300
+Processing by ProdutosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered produtos/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 45ms (Views: 43.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 23:07:53 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-21 23:07:55 -0300
+Processing by PedidosController#index as HTML
+  [1m[35mPedido Load (0.2ms)[0m  SELECT "pedidos".* FROM "pedidos"
+  Rendered pedidos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 59ms (Views: 58.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:07:56 -0300
+Processing by PedidosController#new as HTML
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mUsuario Load (0.3ms)[0m  SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC
+  [1m[36mEncomenda Load (0.2ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC[0m
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered pedidos/_form.html.erb (7.8ms)
+  Rendered pedidos/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 84ms (Views: 78.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:08:31 -0300
+Processing by PedidosController#new as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT "produtos".* FROM "produtos"
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC[0m
+  [1m[35mEncomenda Load (0.2ms)[0m  SELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered pedidos/_form.html.erb (9.3ms)
+  Rendered pedidos/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 61ms (Views: 56.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/scaffolds.self-930de29a197b8d70781cdae9e3aab47092b733c019825bb1b6dc3ba4c999de26.css?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-05-21 23:08:31 -0300
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:08:40 -0300
+Processing by PedidosController#new as HTML
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC[0m
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered pedidos/_form.html.erb (8.8ms)
+  Rendered pedidos/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 57ms (Views: 52.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/scaffolds.self-930de29a197b8d70781cdae9e3aab47092b733c019825bb1b6dc3ba4c999de26.css?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:08:40 -0300
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:11:49 -0300
+Processing by PedidosController#new as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT "produtos".* FROM "produtos"
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC[0m
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered pedidos/_form.html.erb (9.3ms)
+  Rendered pedidos/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 68ms (Views: 64.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:11:49 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:11:49 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:11:49 -0300
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:11:49 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:11:49 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:11:49 -0300
+
+
+Started GET "/assets/scaffolds.self-930de29a197b8d70781cdae9e3aab47092b733c019825bb1b6dc3ba4c999de26.css?body=1" for ::1 at 2017-05-21 23:11:49 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:11:49 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:11:49 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:11:49 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:11:49 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-21 23:11:49 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-21 23:11:49 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-21 23:11:49 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-21 23:11:49 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for ::1 at 2017-05-21 23:11:49 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:11:49 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:11:50 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:11:50 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:11:50 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:11:50 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:11:50 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:11:50 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:11:50 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:11:50 -0300
+
+
+Started GET "/assets/usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:11:50 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-05-21 23:11:50 -0300
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:12:16 -0300
+Processing by PedidosController#new as HTML
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC
+  [1m[36mEncomenda Load (0.2ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC[0m
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered pedidos/_form.html.erb (9.8ms)
+  Rendered pedidos/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 64ms (Views: 60.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/scaffolds.self-930de29a197b8d70781cdae9e3aab47092b733c019825bb1b6dc3ba4c999de26.css?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-05-21 23:12:16 -0300
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:12:33 -0300
+Processing by PedidosController#new as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT "produtos".* FROM "produtos"
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC[0m
+  [1m[35mEncomenda Load (0.2ms)[0m  SELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC
+  Rendered pedidos/_form.html.erb (6.8ms)
+  Rendered pedidos/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 59ms (Views: 55.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/scaffolds.self-930de29a197b8d70781cdae9e3aab47092b733c019825bb1b6dc3ba4c999de26.css?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-05-21 23:12:33 -0300
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:12:42 -0300
+Processing by PedidosController#new as HTML
+  [1m[36mProduto Load (0.3ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC[0m
+  Rendered pedidos/_form.html.erb (6.5ms)
+  Rendered pedidos/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 58ms (Views: 54.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/scaffolds.self-930de29a197b8d70781cdae9e3aab47092b733c019825bb1b6dc3ba4c999de26.css?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-21 23:12:42 -0300
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:12:50 -0300
+Processing by PedidosController#new as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT "produtos".* FROM "produtos"
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC[0m
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC
+  Rendered pedidos/_form.html.erb (6.5ms)
+  Rendered pedidos/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 54ms (Views: 50.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:50 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:50 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/scaffolds.self-930de29a197b8d70781cdae9e3aab47092b733c019825bb1b6dc3ba4c999de26.css?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-05-21 23:12:51 -0300
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:13:05 -0300
+Processing by PedidosController#new as HTML
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mUsuario Load (0.3ms)[0m  SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC
+  [1m[36mEncomenda Load (0.2ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC[0m
+  Rendered pedidos/_form.html.erb (7.8ms)
+  Rendered pedidos/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 60ms (Views: 56.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:13:05 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:13:05 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:13:05 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:13:05 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:13:05 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:13:05 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:13:05 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:13:05 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:13:05 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:13:05 -0300
+
+
+Started GET "/assets/scaffolds.self-930de29a197b8d70781cdae9e3aab47092b733c019825bb1b6dc3ba4c999de26.css?body=1" for ::1 at 2017-05-21 23:13:05 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-21 23:13:05 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-21 23:13:05 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-21 23:13:05 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-21 23:13:05 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for ::1 at 2017-05-21 23:13:06 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:13:06 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:13:06 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:13:06 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:13:06 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:13:06 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:13:06 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:13:06 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:13:06 -0300
+
+
+Started GET "/assets/usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:13:06 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-05-21 23:13:06 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:13:06 -0300
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:13:12 -0300
+Processing by PedidosController#new as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT "produtos".* FROM "produtos"
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC[0m
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC
+  Rendered pedidos/_form.html.erb (6.6ms)
+  Rendered pedidos/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 56ms (Views: 52.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/scaffolds.self-930de29a197b8d70781cdae9e3aab47092b733c019825bb1b6dc3ba4c999de26.css?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-05-21 23:13:12 -0300
+
+
+Started GET "/" for ::1 at 2017-05-21 23:13:43 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/unidades" for ::1 at 2017-05-21 23:13:45 -0300
+Processing by UnidadesController#index as HTML
+  [1m[36mUnidade Load (0.3ms)[0m  [1mSELECT "unidades".* FROM "unidades"[0m
+  Rendered unidades/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 23:13:50 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos" for ::1 at 2017-05-21 23:13:52 -0300
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT "produtos".* FROM "produtos"
+  [1m[36mCategorizacao Load (0.1ms)[0m  [1mSELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCategorizacao Load (0.1ms)[0m  [1mSELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered produtos/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/produtos/new" for ::1 at 2017-05-21 23:14:13 -0300
+Processing by ProdutosController#new as HTML
+  [1m[36mCategorizacao Load (0.2ms)[0m  [1mSELECT "categorizacaos".* FROM "categorizacaos"  ORDER BY "categorizacaos"."nome" ASC[0m
+  [1m[35mUnidade Load (0.2ms)[0m  SELECT "unidades".* FROM "unidades"  ORDER BY "unidades"."nome" ASC
+  Rendered produtos/_form.html.erb (5.3ms)
+  Rendered produtos/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 55ms (Views: 54.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/produtos" for ::1 at 2017-05-21 23:14:15 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered produtos/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/produtos/1/edit" for ::1 at 2017-05-21 23:14:18 -0300
+Processing by ProdutosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduto Load (0.1ms)[0m  SELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCategorizacao Load (0.2ms)[0m  [1mSELECT "categorizacaos".* FROM "categorizacaos"  ORDER BY "categorizacaos"."nome" ASC[0m
+  [1m[35mUnidade Load (0.2ms)[0m  SELECT "unidades".* FROM "unidades"  ORDER BY "unidades"."nome" ASC
+  Rendered produtos/_form.html.erb (4.4ms)
+  Rendered produtos/edit.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/produtos/1" for ::1 at 2017-05-21 23:14:42 -0300
+Processing by ProdutosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2KRYcplZToZqSxqsm6VoRBgRB4agU4e73FOJn//fu78DAuL8uk6nI7w6kSEqfeCJ+47qInf/VSy0KkiCF0JnZQ==", "produto"=>{"categorizacao_id"=>"1", "unidade_id"=>"5", "nome"=>"Banana", "descricao"=>"penca", "valorunitario"=>"10.0"}, "commit"=>"Update Produto", "id"=>"1"}
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "produtos" SET "unidade_id" = ?, "descricao" = ?, "updated_at" = ? WHERE "produtos"."id" = ?[0m  [["unidade_id", 5], ["descricao", "penca"], ["updated_at", "2017-05-22 02:14:42.050376"], ["id", 1]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/produtos/1
+Completed 302 Found in 8ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/produtos/1" for ::1 at 2017-05-21 23:14:42 -0300
+Processing by ProdutosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT  "categorizacaos".* FROM "categorizacaos" WHERE "categorizacaos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered produtos/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 23:14:44 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-21 23:14:45 -0300
+Processing by PedidosController#index as HTML
+  [1m[35mPedido Load (0.2ms)[0m  SELECT "pedidos".* FROM "pedidos"
+  Rendered pedidos/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:14:46 -0300
+Processing by PedidosController#new as HTML
+  [1m[36mProduto Load (0.3ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC[0m
+  Rendered pedidos/_form.html.erb (8.2ms)
+  Rendered pedidos/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 63ms (Views: 59.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:15:55 -0300
+Processing by PedidosController#new as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT "produtos".* FROM "produtos"
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC[0m
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC
+  Rendered pedidos/_form.html.erb (7.0ms)
+  Rendered pedidos/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 49ms (Views: 46.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/scaffolds.self-930de29a197b8d70781cdae9e3aab47092b733c019825bb1b6dc3ba4c999de26.css?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/assets/usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:15:55 -0300
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:17:36 -0300
+Processing by PedidosController#new as HTML
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC
+  [1m[36mEncomenda Load (0.2ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC[0m
+  Rendered pedidos/_form.html.erb (7.0ms)
+  Rendered pedidos/new.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    22:   <div>
+    23:     <%= f.fields_for :itempedidos do |ff| %>
+    24:     <div class="field">
+    25:       <%= ff.number_field :quantidade, nil, min:1%>
+    26:       <%= label_tag ff.object.produto.nome %> -  
+    27:       <%= ff.hidden_field :produto_id %>
+    28:       <%= label_tag ff.object.produto.descricao %>
+  app/views/pedidos/_form.html.erb:25:in `block (2 levels) in _app_views_pedidos__form_html_erb__340382070671253753_70297723476220'
+  app/views/pedidos/_form.html.erb:23:in `block in _app_views_pedidos__form_html_erb__340382070671253753_70297723476220'
+  app/views/pedidos/_form.html.erb:1:in `_app_views_pedidos__form_html_erb__340382070671253753_70297723476220'
+  app/views/pedidos/new.html.erb:3:in `_app_views_pedidos_new_html_erb__165380693870148058_70297684121140'
+
+
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.8ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (101.1ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (81.9ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (192.2ms)
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:17:51 -0300
+Processing by PedidosController#new as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT "produtos".* FROM "produtos"
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC[0m
+  [1m[35mEncomenda Load (0.2ms)[0m  SELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC
+  Rendered pedidos/_form.html.erb (6.7ms)
+  Rendered pedidos/new.html.erb within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    22:   <div>
+    23:     <%= f.fields_for :itempedidos do |ff| %>
+    24:     <div class="field">
+    25:       <%= ff.number_field :quantidade, nil, min:1 %>
+    26:       <%= label_tag ff.object.produto.nome %> -  
+    27:       <%= ff.hidden_field :produto_id %>
+    28:       <%= label_tag ff.object.produto.descricao %>
+  app/views/pedidos/_form.html.erb:25:in `block (2 levels) in _app_views_pedidos__form_html_erb__340382070671253753_70297698514860'
+  app/views/pedidos/_form.html.erb:23:in `block in _app_views_pedidos__form_html_erb__340382070671253753_70297698514860'
+  app/views/pedidos/_form.html.erb:1:in `_app_views_pedidos__form_html_erb__340382070671253753_70297698514860'
+  app/views/pedidos/new.html.erb:3:in `_app_views_pedidos_new_html_erb__165380693870148058_70297684121140'
+
+
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.9ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (103.1ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (88.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (190.8ms)
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:18:30 -0300
+Processing by PedidosController#new as HTML
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  Rendered pedidos/_form.html.erb (2.5ms)
+  Rendered pedidos/new.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/rafaelgloria/Documents/rails/benditaquitanda/app/views/pedidos/_form.html.erb:25: syntax error, unexpected tINTEGER, expecting ')'
+...umber_field :quantidade, :min 1 );@output_buffer.safe_append...
+...                               ^):
+  app/views/pedidos/_form.html.erb:25: syntax error, unexpected tINTEGER, expecting ')'
+  app/views/pedidos/new.html.erb:3:in `_app_views_pedidos_new_html_erb__165380693870148058_70297684121140'
+
+
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.7ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (81.7ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (201.5ms)
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:20:22 -0300
+Processing by PedidosController#new as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT "produtos".* FROM "produtos"
+  Rendered pedidos/_form.html.erb (1.8ms)
+  Rendered pedidos/new.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/rafaelgloria/Documents/rails/benditaquitanda/app/views/pedidos/_form.html.erb:25: syntax error, unexpected tFLOAT, expecting ')'
+...er_field(:quantidade, :in 1.100) );@output_buffer.safe_appen...
+...                               ^):
+  app/views/pedidos/_form.html.erb:25: syntax error, unexpected tFLOAT, expecting ')'
+  app/views/pedidos/new.html.erb:3:in `_app_views_pedidos_new_html_erb__165380693870148058_70297684121140'
+
+
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.3ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (112.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (80.7ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (190.8ms)
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:20:51 -0300
+Processing by PedidosController#new as HTML
+  [1m[36mProduto Load (0.3ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC
+  [1m[36mEncomenda Load (0.3ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC[0m
+  Rendered pedidos/_form.html.erb (9.5ms)
+  Rendered pedidos/new.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `min' for 1.1:Float):
+    22:   <div>
+    23:     <%= f.fields_for :itempedidos do |ff| %>
+    24:     <div class="field">
+    25:       <%= ff.number_field(:quantidade, in: 1.100) %>
+    26:       <%= label_tag ff.object.produto.nome %> -  
+    27:       <%= ff.hidden_field :produto_id %>
+    28:       <%= label_tag ff.object.produto.descricao %>
+  app/views/pedidos/_form.html.erb:25:in `block (2 levels) in _app_views_pedidos__form_html_erb__340382070671253753_70297713208640'
+  app/views/pedidos/_form.html.erb:23:in `block in _app_views_pedidos__form_html_erb__340382070671253753_70297713208640'
+  app/views/pedidos/_form.html.erb:1:in `_app_views_pedidos__form_html_erb__340382070671253753_70297713208640'
+  app/views/pedidos/new.html.erb:3:in `_app_views_pedidos_new_html_erb__165380693870148058_70297684121140'
+
+
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.0ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (104.1ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (86.2ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (179.2ms)
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:21:11 -0300
+Processing by PedidosController#new as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT "produtos".* FROM "produtos"
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC[0m
+  [1m[35mEncomenda Load (0.2ms)[0m  SELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC
+  Rendered pedidos/_form.html.erb (6.9ms)
+  Rendered pedidos/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 57ms (Views: 53.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:21:11 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:21:11 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:21:11 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:21:11 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/scaffolds.self-930de29a197b8d70781cdae9e3aab47092b733c019825bb1b6dc3ba4c999de26.css?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-05-21 23:21:12 -0300
+
+
+Started GET "/pedidos/new" for ::1 at 2017-05-21 23:21:29 -0300
+Processing by PedidosController#new as HTML
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC
+  [1m[36mEncomenda Load (0.2ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC[0m
+  Rendered pedidos/_form.html.erb (7.9ms)
+  Rendered pedidos/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 69ms (Views: 65.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:21:29 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:21:29 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:21:29 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:21:29 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:21:29 -0300
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:21:29 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:21:29 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:21:29 -0300
+
+
+Started GET "/assets/scaffolds.self-930de29a197b8d70781cdae9e3aab47092b733c019825bb1b6dc3ba4c999de26.css?body=1" for ::1 at 2017-05-21 23:21:29 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:21:29 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-21 23:21:29 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-21 23:21:29 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-21 23:21:30 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-21 23:21:30 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:21:30 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for ::1 at 2017-05-21 23:21:30 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:21:30 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:21:30 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:21:30 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:21:30 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:21:30 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-21 23:21:30 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:21:30 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:21:30 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-05-21 23:21:30 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:21:30 -0300
+
+
+Started GET "/assets/usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-21 23:21:30 -0300
+
+
+Started GET "/" for ::1 at 2017-05-21 23:22:12 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categorizacaos" for ::1 at 2017-05-21 23:22:16 -0300
+Processing by CategorizacaosController#index as HTML
+  [1m[35mCategorizacao Load (0.2ms)[0m  SELECT "categorizacaos".* FROM "categorizacaos"
+  Rendered categorizacaos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 23:22:18 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/encomendas" for ::1 at 2017-05-21 23:22:19 -0300
+Processing by EncomendasController#index as HTML
+  [1m[36mEncomenda Load (0.2ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"[0m
+  [1m[35mEndereco Load (0.1ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 23:22:24 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 41ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/enderecos" for ::1 at 2017-05-21 23:22:26 -0300
+Processing by EnderecosController#index as HTML
+  [1m[36mEndereco Load (0.2ms)[0m  [1mSELECT "enderecos".* FROM "enderecos"[0m
+  Rendered enderecos/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 60ms (Views: 59.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 23:22:29 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/encomendas" for ::1 at 2017-05-21 23:22:31 -0300
+Processing by EncomendasController#index as HTML
+  [1m[35mEncomenda Load (0.2ms)[0m  SELECT "encomendas".* FROM "encomendas"
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 23:22:48 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios" for ::1 at 2017-05-21 23:22:50 -0300
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.3ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 70ms (Views: 68.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-21 23:22:52 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 41ms (Views: 40.6ms | ActiveRecord: 0.0ms)
