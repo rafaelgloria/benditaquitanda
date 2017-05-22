@@ -8,6 +8,11 @@
 </head>
 <body>
 <h1><%= link_to 'Bendita Quitanda', root_path %></h1>
+<% if current_usuario %> 
+	<%= current_usuario.nome %>
+	<%= link_to 'Sair', destroy_usuario_session_path %>
+<% end %>
+<hr/>
 <%= yield %>
 </body>
 </html>
