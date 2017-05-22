@@ -1,5 +1,6 @@
 class CategorizacaosController < ApplicationController
   before_action :set_categorizacao, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_usuario!
 
   # GET /categorizacaos
   # GET /categorizacaos.json

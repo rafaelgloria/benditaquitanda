@@ -24,8 +24,15 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # gemas novas
-#gem 'bootstrap', '~> 4.0.0.alpha6'
+# bootstrap
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
+gem 'bootstrap', '~> 4.0.0.alpha6'
+# cocoon - form fields for com ajax / javascript
 gem 'cocoon'
+# Autenticação
+gem 'devise'
 
 
 # Use ActiveModel has_secure_password
