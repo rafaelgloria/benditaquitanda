@@ -1,29 +1,29 @@
-class CategorizacaosController < ApplicationController
+class CategorizacoesController < ApplicationController
   before_action :set_categorizacao, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_usuario!
 
-  # GET /categorizacaos
-  # GET /categorizacaos.json
+  # GET /categorizacoes
+  # GET /categorizacoes.json
   def index
-    @categorizacaos = Categorizacao.all
+    @categorizacoes = Categorizacao.all
   end
 
-  # GET /categorizacaos/1
-  # GET /categorizacaos/1.json
+  # GET /categorizacoes/1
+  # GET /categorizacoes/1.json
   def show
   end
 
-  # GET /categorizacaos/new
+  # GET /categorizacoes/new
   def new
     @categorizacao = Categorizacao.new
   end
 
-  # GET /categorizacaos/1/edit
+  # GET /categorizacoes/1/edit
   def edit
   end
 
-  # POST /categorizacaos
-  # POST /categorizacaos.json
+  # POST /categorizacoes
+  # POST /categorizacoes.json
   def create
     @categorizacao = Categorizacao.new(categorizacao_params)
 
@@ -38,8 +38,8 @@ class CategorizacaosController < ApplicationController
     end
   end
 
-  # PATCH/PUT /categorizacaos/1
-  # PATCH/PUT /categorizacaos/1.json
+  # PATCH/PUT /categorizacoes/1
+  # PATCH/PUT /categorizacoes/1.json
   def update
     respond_to do |format|
       if @categorizacao.update(categorizacao_params)
@@ -52,12 +52,12 @@ class CategorizacaosController < ApplicationController
     end
   end
 
-  # DELETE /categorizacaos/1
-  # DELETE /categorizacaos/1.json
+  # DELETE /categorizacoes/1
+  # DELETE /categorizacoes/1.json
   def destroy
     @categorizacao.destroy
     respond_to do |format|
-      format.html { redirect_to categorizacaos_url, notice: 'Categorizacao was successfully destroyed.' }
+      format.html { redirect_to categorizacoes_url, notice: 'Categorizacao was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

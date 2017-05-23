@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :endereco_id %>
-    <%= f.collection_select :endereco_id, Endereco.order(:logradouro),:id,:logradouro, include_blank: true %>
+    <%= f.collection_select :endereco_id, Endereco.order(:logradouro),:id,:logradourocomnumero, include_blank: true %>
   </div>
   <div class="field">
     <%= f.label :dataentrega %><br>

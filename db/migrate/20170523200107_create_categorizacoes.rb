@@ -1,6 +1,6 @@
-class CreateCategorizacaos < ActiveRecord::Migration
+class CreateCategorizacoes < ActiveRecord::Migration
   def change
-    create_table :categorizacaos do |t|
+    create_table :categorizacoes do |t|
       t.string :nome
       t.string :descricao
 

@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170523110533) do
+ActiveRecord::Schema.define(version: 20170523200107) do
 
-  create_table "categorizacaos", force: :cascade do |t|
+  create_table "categorizacoes", force: :cascade do |t|
     t.string   "nome"
     t.string   "descricao"
     t.datetime "created_at", null: false

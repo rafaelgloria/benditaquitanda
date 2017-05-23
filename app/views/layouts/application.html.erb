@@ -7,10 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<h1><%= link_to 'Bendita Quitanda', root_path %></h1>
+<%= link_to 'Bendita Quitanda', root_path %>
 <% if current_usuario %> 
-	<%= current_usuario.email %>
-	<%= link_to 'Sair', destroy_usuario_session_path, {method: 'DELETE'} %>
+	| <%= current_usuario.email %>
+	| <%= link_to 'Sair', destroy_usuario_session_path, {method: 'DELETE'} %>
 <% end %>
 <hr/>
 <%= yield %>

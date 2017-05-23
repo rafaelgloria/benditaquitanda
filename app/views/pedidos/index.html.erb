@@ -14,8 +14,8 @@
   <tbody>
     <% @pedidos.each do |pedido| %>
       <tr>
-        <td><%= pedido.usuario.nome %></td>
-        <td><%= pedido.encomenda.dataentrega %></td>
+        <td><%= pedido.usuario.email %></td>
+        <td><%= pedido.encomenda.endereco.logradourocomnumero %></td>
         <td><%= link_to 'Show', pedido %></td>
         <td><%= link_to 'Edit', edit_pedido_path(pedido) %></td>
         <td><%= link_to 'Destroy', pedido, method: :delete, data: { confirm: 'Are you sure?' } %></td>

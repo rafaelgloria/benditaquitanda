@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :categorizacoes
   devise_for :usuarios
   resources :itempedidos
   root "welcome#index"
@@ -8,7 +9,6 @@ Rails.application.routes.draw do
   resources :enderecos
   resources :produtos
   resources :unidades
-  resources :categorizacaos
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
