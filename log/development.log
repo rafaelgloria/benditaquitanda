@@ -19843,3 +19843,1703 @@ ActiveRecord::RecordNotFound (Couldn't find Usuario with 'id'=sign_out):
   Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
   Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (23.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 07:50:50 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 416ms (Views: 408.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2017-05-23 07:50:54 -0300
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (3.3ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/usuarios/1/edit" for 127.0.0.1 at 2017-05-23 07:50:57 -0300
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered usuarios/_form.html.erb (19.9ms)
+  Rendered usuarios/edit.html.erb within layouts/application (22.8ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 80ms (Views: 77.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2017-05-23 07:51:09 -0300
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.1ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/usuarios/sign_out" for 127.0.0.1 at 2017-05-23 07:55:44 -0300
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Usuario with 'id'=sign_out):
+  app/controllers/usuarios_controller.rb:67:in `set_usuario'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.3ms)
+
+
+Started GET "/usuarios/new" for 127.0.0.1 at 2017-05-23 07:55:55 -0300
+Processing by UsuariosController#new as HTML
+  Rendered usuarios/_form.html.erb (3.6ms)
+  Rendered usuarios/new.html.erb within layouts/application (4.9ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 88ms (Views: 86.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2017-05-23 07:56:01 -0300
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.2ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 51ms (Views: 50.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/usuarios/1/edit" for 127.0.0.1 at 2017-05-23 07:56:09 -0300
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered usuarios/_form.html.erb (2.5ms)
+  Rendered usuarios/edit.html.erb within layouts/application (3.5ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 69ms (Views: 67.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2017-05-23 07:56:10 -0300
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.0ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/usuarios/1/edit" for 127.0.0.1 at 2017-05-23 07:56:11 -0300
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered usuarios/_form.html.erb (1.7ms)
+  Rendered usuarios/edit.html.erb within layouts/application (2.3ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2017-05-23 07:56:15 -0300
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.1ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/usuarios/1" for 127.0.0.1 at 2017-05-23 07:56:18 -0300
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered usuarios/show.html.erb within layouts/application (1.1ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2017-05-23 07:56:20 -0300
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.0ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 07:56:45 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/usuarios/sign_out" for 127.0.0.1 at 2017-05-23 07:56:46 -0300
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Usuario with 'id'=sign_out):
+  app/controllers/usuarios_controller.rb:67:in `set_usuario'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.8ms)
+  [1m[36m (104.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (115.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCategorizacaos (20170518044846)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "categorizacaos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar, "descricao" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170518044846"]]
+  [1m[35m (129.4ms)[0m  commit transaction
+Migrating to CreateUnidades (20170518044906)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "unidades" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar, "descricao" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170518044906"]]
+  [1m[35m (99.1ms)[0m  commit transaction
+Migrating to CreateProdutos (20170518045039)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "produtos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "categorizacao_id" integer, "unidade_id" integer, "nome" varchar, "descricao" varchar, "valorunitario" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_produtos_on_categorizacao_id" ON "produtos" ("categorizacao_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_produtos_on_categorizacao_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_produtos_on_categorizacao_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_produtos_on_unidade_id" ON "produtos" ("unidade_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170518045039"]]
+  [1m[36m (80.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateEnderecos (20170518045219)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "enderecos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "logradouro" varchar, "numero" integer, "cep" varchar, "bairro" varchar, "municipio" varchar, "estado" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170518045219"]]
+  [1m[36m (154.0ms)[0m  [1mcommit transaction[0m
+Migrating to CreateEncomendas (20170518045316)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "encomendas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "endereco_id" integer, "dataentrega" datetime, "datalimitepedido" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_encomendas_on_endereco_id" ON "encomendas" ("endereco_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170518045316"]]
+  [1m[35m (79.4ms)[0m  commit transaction
+Migrating to CreatePedidos (20170518045349)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "pedidos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "usuario_id" integer, "encomenda_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_pedidos_on_usuario_id" ON "pedidos" ("usuario_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_pedidos_on_usuario_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_pedidos_on_usuario_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_pedidos_on_encomenda_id" ON "pedidos" ("encomenda_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170518045349"]]
+  [1m[36m (77.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateEncomendaprodutos (20170518045525)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "encomendaprodutos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "encomenda_id" integer, "produto_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_encomendaprodutos_on_encomenda_id" ON "encomendaprodutos" ("encomenda_id")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_encomendaprodutos_on_encomenda_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_encomendaprodutos_on_encomenda_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_encomendaprodutos_on_produto_id" ON "encomendaprodutos" ("produto_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170518045525"]]
+  [1m[35m (104.2ms)[0m  commit transaction
+Migrating to CreateItempedidos (20170519110327)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "itempedidos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "quantidade" integer, "pedido_id" integer, "produto_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_itempedidos_on_pedido_id" ON "itempedidos" ("pedido_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_itempedidos_on_pedido_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_itempedidos_on_pedido_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_itempedidos_on_produto_id" ON "itempedidos" ("produto_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170519110327"]]
+  [1m[36m (96.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_encomendaprodutos_on_produto_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_encomendaprodutos_on_produto_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_encomendaprodutos_on_encomenda_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_encomendaprodutos_on_encomenda_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_encomendas_on_endereco_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_encomendas_on_endereco_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_itempedidos_on_produto_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_itempedidos_on_produto_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_itempedidos_on_pedido_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_itempedidos_on_pedido_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_pedidos_on_encomenda_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_pedidos_on_encomenda_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_pedidos_on_usuario_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_pedidos_on_usuario_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_produtos_on_unidade_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_produtos_on_unidade_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_produtos_on_categorizacao_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_produtos_on_categorizacao_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsuarios (20170523110533)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_usuarios_on_email" ON "usuarios" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_usuarios_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_usuarios_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_usuarios_on_reset_password_token" ON "usuarios" ("reset_password_token")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170523110533"]]
+  [1m[36m (95.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_encomendaprodutos_on_produto_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_encomendaprodutos_on_produto_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_encomendaprodutos_on_encomenda_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_encomendaprodutos_on_encomenda_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_encomendas_on_endereco_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_encomendas_on_endereco_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_itempedidos_on_produto_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_itempedidos_on_produto_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_itempedidos_on_pedido_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_itempedidos_on_pedido_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_pedidos_on_encomenda_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_pedidos_on_encomenda_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_pedidos_on_usuario_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_pedidos_on_usuario_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_produtos_on_unidade_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_produtos_on_unidade_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_produtos_on_categorizacao_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_produtos_on_categorizacao_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_usuarios_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_usuarios_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_usuarios_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_usuarios_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 08:06:46 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (29.4ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `usuarios_path' for #<#<Class:0x000000050401f0>:0x0000000502e068>
+Did you mean?  usuario_session_path):
+     6: <%= link_to 'Pedidos', pedidos_path %>
+     7: <%= link_to 'Produtos', produtos_path %>
+     8: <%= link_to 'Unidades', unidades_path %>
+     9: <%= link_to 'Usuários', usuarios_path %>
+    10: <hr/>
+    11: <%= link_to 'Cadastro de Novo Usuário', new_usuario_registration_path %>
+  app/views/welcome/index.html.erb:9:in `_app_views_welcome_index_html_erb___4204283700888414153_41837540'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 08:07:22 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 350ms (Views: 348.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-0ef5b3fd87bb7aa2950132e9103b61b8511be17945d2553969d0beacfb7c43b0.css?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/bootstrap/util.self-5ae5b599fc2afe0f317696c5dfc0b51d6ce2ecb47d0341d1555b2fe971ada496.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/tether/tether.self-0e1103bd72084f20bc17863434595ea99e999bcf530d80110698608f35ff5620.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/tether.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-5a586b490b4c9332249b231956b361b852b128a0d82f7f08549f205bba1bfeb0.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-f18afa468f85125228747ec83e00e56a26bbc71295e90a3848af25b258445615.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/bootstrap/button.self-30412f39aaa761313878531076ce8187fe6c017e42111bf2c283fce4a7c850f8.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-94c7455a70c5bb5ad5b3eae0c70388160c238afdea0b48d5345587fd176fb52d.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-954f8384ac380992dd91b2b176b570b0792365a334efb758774c718d9628a329.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-e3abc2817f699a2be95f78a4aff190ef7669d5590adbacd0c08867eb34ed16c6.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-a406636221efb5add01fbaa60c24ac0ae6bc0c57008d8e2503d68f49fbe75ad0.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-dd8a9f3fa1f9fc58df30c7ed9a17dfc7303b812d72640899beee03609124b426.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-66781adda319363e67c65edfc73459411bd3948c0f32efddbc9928b810d5abf4.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-636159b35205da4142a43bc02d2849d77d3ac07a0946211585cde15a9c6ff21f.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-7d459fac34d4d96fd9d6da8efcd40dee55b66579a24ddcebf0a355c82dcad7e0.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:07:23 -0300
+
+
+Started GET "/categorizacaos" for 127.0.0.1 at 2017-05-23 08:07:26 -0300
+Processing by CategorizacaosController#index as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-05-23 08:07:26 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (1.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 99ms (Views: 81.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 08:07:32 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 52ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_up" for 127.0.0.1 at 2017-05-23 08:07:33 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/registrations/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 51ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 08:07:37 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categorizacaos" for 127.0.0.1 at 2017-05-23 08:17:41 -0300
+Processing by CategorizacaosController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-05-23 08:17:42 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/sign_in" for 127.0.0.1 at 2017-05-23 08:17:50 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DX8FmzGFW9o6nkR/ZfYvvY5v/2UeRdAolBCQl9SqJudaOPtOSptRT1kMDqgxWPt1ysbLdTJ1NVRdNMXuyYQeUQ==", "usuario"=>{"email"=>"gloria.rafael@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."email" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["email", "gloria.rafael@gmail.com"]]
+Completed 401 Unauthorized in 44ms (ActiveRecord: 0.2ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DX8FmzGFW9o6nkR/ZfYvvY5v/2UeRdAolBCQl9SqJudaOPtOSptRT1kMDqgxWPt1ysbLdTJ1NVRdNMXuyYQeUQ==", "usuario"=>{"email"=>"gloria.rafael@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 329ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_up" for 127.0.0.1 at 2017-05-23 08:18:01 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/registrations/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 53ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios" for 127.0.0.1 at 2017-05-23 08:18:08 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"426XOE8fGuQyr0qYTgW9NARNX8Hsnv5MQ7hhSIV+7lS0KWntNAEQcVE9AE8aq2n8QORr0cCuGzCKnDQxmFDW4g==", "usuario"=>{"email"=>"gloria.rafael@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios" WHERE "usuarios"."email" = 'gloria.rafael@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "usuarios" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "gloria.rafael@gmail.com"], ["encrypted_password", "$2a$11$gRNMtk5bVztz47BDqtFbk.vh.uYnknMw1uK8ElCHt7CBRGu3.G6J2"], ["created_at", "2017-05-23 11:18:08.887175"], ["updated_at", "2017-05-23 11:18:08.887175"]]
+  [1m[36m (56.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "usuarios" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "usuarios"."id" = ?[0m  [["last_sign_in_at", "2017-05-23 11:18:08.945866"], ["current_sign_in_at", "2017-05-23 11:18:08.945866"], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2017-05-23 11:18:08.946842"], ["id", 1]]
+  [1m[35m (60.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/categorizacaos
+Completed 302 Found in 299ms (ActiveRecord: 117.8ms)
+
+
+Started GET "/categorizacaos" for 127.0.0.1 at 2017-05-23 08:18:09 -0300
+Processing by CategorizacaosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT "categorizacaos".* FROM "categorizacaos"
+  Rendered categorizacaos/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `nome' for #<Usuario:0x00000003c18420>):
+     9: <body>
+    10: <h1><%= link_to 'Bendita Quitanda', root_path %></h1>
+    11: <% if current_usuario %> 
+    12: 	<%= current_usuario.nome %>
+    13: 	<%= link_to 'Sair', destroy_usuario_session_path %>
+    14: <% end %>
+    15: <hr/>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2015950099345958468_41829660'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (11.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (23.5ms)
+
+
+Started GET "/categorizacaos" for 127.0.0.1 at 2017-05-23 08:18:58 -0300
+Processing by CategorizacaosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT "categorizacaos".* FROM "categorizacaos"
+  Rendered categorizacaos/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-0ef5b3fd87bb7aa2950132e9103b61b8511be17945d2553969d0beacfb7c43b0.css?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/tether/tether.self-0e1103bd72084f20bc17863434595ea99e999bcf530d80110698608f35ff5620.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/bootstrap/button.self-30412f39aaa761313878531076ce8187fe6c017e42111bf2c283fce4a7c850f8.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/tether.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-5a586b490b4c9332249b231956b361b852b128a0d82f7f08549f205bba1bfeb0.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/bootstrap/util.self-5ae5b599fc2afe0f317696c5dfc0b51d6ce2ecb47d0341d1555b2fe971ada496.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-f18afa468f85125228747ec83e00e56a26bbc71295e90a3848af25b258445615.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-94c7455a70c5bb5ad5b3eae0c70388160c238afdea0b48d5345587fd176fb52d.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-a406636221efb5add01fbaa60c24ac0ae6bc0c57008d8e2503d68f49fbe75ad0.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-66781adda319363e67c65edfc73459411bd3948c0f32efddbc9928b810d5abf4.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-954f8384ac380992dd91b2b176b570b0792365a334efb758774c718d9628a329.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-dd8a9f3fa1f9fc58df30c7ed9a17dfc7303b812d72640899beee03609124b426.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-e3abc2817f699a2be95f78a4aff190ef7669d5590adbacd0c08867eb34ed16c6.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-7d459fac34d4d96fd9d6da8efcd40dee55b66579a24ddcebf0a355c82dcad7e0.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-636159b35205da4142a43bc02d2849d77d3ac07a0946211585cde15a9c6ff21f.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:18:59 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 08:19:04 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 08:19:48 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-0ef5b3fd87bb7aa2950132e9103b61b8511be17945d2553969d0beacfb7c43b0.css?body=1" for 127.0.0.1 at 2017-05-23 08:19:48 -0300
+
+
+Started GET "/assets/tether/tether.self-0e1103bd72084f20bc17863434595ea99e999bcf530d80110698608f35ff5620.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:48 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:48 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:48 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:48 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:48 -0300
+
+
+Started GET "/assets/bootstrap/util.self-5ae5b599fc2afe0f317696c5dfc0b51d6ce2ecb47d0341d1555b2fe971ada496.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:48 -0300
+
+
+Started GET "/assets/tether.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:48 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-5a586b490b4c9332249b231956b361b852b128a0d82f7f08549f205bba1bfeb0.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:48 -0300
+
+
+Started GET "/assets/bootstrap/button.self-30412f39aaa761313878531076ce8187fe6c017e42111bf2c283fce4a7c850f8.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:48 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-954f8384ac380992dd91b2b176b570b0792365a334efb758774c718d9628a329.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:48 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-94c7455a70c5bb5ad5b3eae0c70388160c238afdea0b48d5345587fd176fb52d.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:48 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-f18afa468f85125228747ec83e00e56a26bbc71295e90a3848af25b258445615.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:48 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-a406636221efb5add01fbaa60c24ac0ae6bc0c57008d8e2503d68f49fbe75ad0.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:48 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-e3abc2817f699a2be95f78a4aff190ef7669d5590adbacd0c08867eb34ed16c6.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:48 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-66781adda319363e67c65edfc73459411bd3948c0f32efddbc9928b810d5abf4.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:48 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-dd8a9f3fa1f9fc58df30c7ed9a17dfc7303b812d72640899beee03609124b426.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:48 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-7d459fac34d4d96fd9d6da8efcd40dee55b66579a24ddcebf0a355c82dcad7e0.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:49 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:49 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:49 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:49 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:49 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-636159b35205da4142a43bc02d2849d77d3ac07a0946211585cde15a9c6ff21f.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:49 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:49 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:49 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:49 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:49 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:49 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:19:49 -0300
+
+
+Started GET "/pedidos" for 127.0.0.1 at 2017-05-23 08:20:53 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mPedido Load (0.2ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  Rendered pedidos/index.html.erb within layouts/application (1.9ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 64ms (Views: 57.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pedidos/new" for 127.0.0.1 at 2017-05-23 08:20:55 -0300
+Processing by PedidosController#new as HTML
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mUsuario Load (0.8ms)[0m  SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC
+  Rendered pedidos/_form.html.erb (5.4ms)
+  Rendered pedidos/new.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.3ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: usuarios.nome: SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :usuario_id %><br>
+    16:     <%= f.collection_select :usuario_id, Usuario.order(:nome),:id,:nome, include_blank: true %>
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :encomenda_id %><br>
+  app/views/pedidos/_form.html.erb:16:in `block in _app_views_pedidos__form_html_erb__3756772088991993633_70178640801840'
+  app/views/pedidos/_form.html.erb:1:in `_app_views_pedidos__form_html_erb__3756772088991993633_70178640801840'
+  app/views/pedidos/new.html.erb:3:in `_app_views_pedidos_new_html_erb__924564006653839371_70178641039240'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (11.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (23.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 08:21:04 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 59ms (Views: 57.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/unidades" for 127.0.0.1 at 2017-05-23 08:21:07 -0300
+Processing by UnidadesController#index as HTML
+  [1m[35mUnidade Load (0.2ms)[0m  SELECT "unidades".* FROM "unidades"
+  Rendered unidades/index.html.erb within layouts/application (1.5ms)
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 149ms (Views: 79.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 08:21:09 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 66ms (Views: 65.7ms | ActiveRecord: 0.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUsuarioRefToPedidos (20170523112628)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "pedidos" ADD "usuario_id" integer[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_encomendaprodutos_on_produto_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_encomendaprodutos_on_produto_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_encomendaprodutos_on_encomenda_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_encomendaprodutos_on_encomenda_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_encomendas_on_endereco_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_encomendas_on_endereco_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_itempedidos_on_produto_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_itempedidos_on_produto_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_itempedidos_on_pedido_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_itempedidos_on_pedido_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_pedidos_on_encomenda_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_pedidos_on_encomenda_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_pedidos_on_usuario_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_pedidos_on_usuario_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_produtos_on_unidade_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_produtos_on_unidade_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_produtos_on_categorizacao_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_produtos_on_categorizacao_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_usuarios_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_usuarios_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_usuarios_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_usuarios_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 08:28:08 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 355ms (Views: 347.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-0ef5b3fd87bb7aa2950132e9103b61b8511be17945d2553969d0beacfb7c43b0.css?body=1" for 127.0.0.1 at 2017-05-23 08:28:08 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:08 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:08 -0300
+
+
+Started GET "/assets/tether.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:08 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:08 -0300
+
+
+Started GET "/assets/tether/tether.self-0e1103bd72084f20bc17863434595ea99e999bcf530d80110698608f35ff5620.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:08 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:08 -0300
+
+
+Started GET "/assets/bootstrap/button.self-30412f39aaa761313878531076ce8187fe6c017e42111bf2c283fce4a7c850f8.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:08 -0300
+
+
+Started GET "/assets/bootstrap/util.self-5ae5b599fc2afe0f317696c5dfc0b51d6ce2ecb47d0341d1555b2fe971ada496.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-5a586b490b4c9332249b231956b361b852b128a0d82f7f08549f205bba1bfeb0.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-f18afa468f85125228747ec83e00e56a26bbc71295e90a3848af25b258445615.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-954f8384ac380992dd91b2b176b570b0792365a334efb758774c718d9628a329.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-a406636221efb5add01fbaa60c24ac0ae6bc0c57008d8e2503d68f49fbe75ad0.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-94c7455a70c5bb5ad5b3eae0c70388160c238afdea0b48d5345587fd176fb52d.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-66781adda319363e67c65edfc73459411bd3948c0f32efddbc9928b810d5abf4.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-e3abc2817f699a2be95f78a4aff190ef7669d5590adbacd0c08867eb34ed16c6.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-dd8a9f3fa1f9fc58df30c7ed9a17dfc7303b812d72640899beee03609124b426.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-7d459fac34d4d96fd9d6da8efcd40dee55b66579a24ddcebf0a355c82dcad7e0.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-636159b35205da4142a43bc02d2849d77d3ac07a0946211585cde15a9c6ff21f.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:09 -0300
+
+
+Started GET "/pedidos" for 127.0.0.1 at 2017-05-23 08:28:14 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mPedido Load (0.1ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  Rendered pedidos/index.html.erb within layouts/application (1.6ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 53ms (Views: 46.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pedidos/new" for 127.0.0.1 at 2017-05-23 08:28:16 -0300
+Processing by PedidosController#new as HTML
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mUsuario Load (0.8ms)[0m  SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC
+  Rendered pedidos/_form.html.erb (16.1ms)
+  Rendered pedidos/new.html.erb within layouts/application (19.2ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: usuarios.nome: SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."nome" ASC):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :usuario_id %><br>
+    16:     <%= f.collection_select :usuario_id, Usuario.order(:nome),:id,:nome, include_blank: true %>
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :encomenda_id %><br>
+  app/views/pedidos/_form.html.erb:16:in `block in _app_views_pedidos__form_html_erb__1409743988636768957_69958154123780'
+  app/views/pedidos/_form.html.erb:1:in `_app_views_pedidos__form_html_erb__1409743988636768957_69958154123780'
+  app/views/pedidos/new.html.erb:3:in `_app_views_pedidos_new_html_erb__3209895711712722888_69958105063380'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.0ms)
+
+
+Started GET "/pedidos/new" for 127.0.0.1 at 2017-05-23 08:28:51 -0300
+Processing by PedidosController#new as HTML
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."email" ASC
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC[0m
+  Rendered pedidos/_form.html.erb (17.1ms)
+  Rendered pedidos/new.html.erb within layouts/application (17.9ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 68ms (Views: 66.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-0ef5b3fd87bb7aa2950132e9103b61b8511be17945d2553969d0beacfb7c43b0.css?body=1" for 127.0.0.1 at 2017-05-23 08:28:51 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:51 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/tether/tether.self-0e1103bd72084f20bc17863434595ea99e999bcf530d80110698608f35ff5620.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/tether.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/bootstrap/util.self-5ae5b599fc2afe0f317696c5dfc0b51d6ce2ecb47d0341d1555b2fe971ada496.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-5a586b490b4c9332249b231956b361b852b128a0d82f7f08549f205bba1bfeb0.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-954f8384ac380992dd91b2b176b570b0792365a334efb758774c718d9628a329.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-f18afa468f85125228747ec83e00e56a26bbc71295e90a3848af25b258445615.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/bootstrap/button.self-30412f39aaa761313878531076ce8187fe6c017e42111bf2c283fce4a7c850f8.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-94c7455a70c5bb5ad5b3eae0c70388160c238afdea0b48d5345587fd176fb52d.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-66781adda319363e67c65edfc73459411bd3948c0f32efddbc9928b810d5abf4.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-dd8a9f3fa1f9fc58df30c7ed9a17dfc7303b812d72640899beee03609124b426.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-e3abc2817f699a2be95f78a4aff190ef7669d5590adbacd0c08867eb34ed16c6.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-7d459fac34d4d96fd9d6da8efcd40dee55b66579a24ddcebf0a355c82dcad7e0.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-636159b35205da4142a43bc02d2849d77d3ac07a0946211585cde15a9c6ff21f.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-a406636221efb5add01fbaa60c24ac0ae6bc0c57008d8e2503d68f49fbe75ad0.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:28:52 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 08:28:57 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 47ms (Views: 45.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2017-05-23 08:28:59 -0300
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.1ms)[0m  SELECT "produtos".* FROM "produtos"
+  Rendered produtos/index.html.erb within layouts/application (1.3ms)
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 71ms (Views: 70.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2017-05-23 08:29:00 -0300
+Processing by ProdutosController#new as HTML
+  [1m[35mCategorizacao Load (0.2ms)[0m  SELECT "categorizacaos".* FROM "categorizacaos"  ORDER BY "categorizacaos"."nome" ASC
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT "unidades".* FROM "unidades"  ORDER BY "unidades"."nome" ASC[0m
+  Rendered produtos/_form.html.erb (14.7ms)
+  Rendered produtos/new.html.erb within layouts/application (41.9ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 152ms (Views: 144.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2017-05-23 08:29:03 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (0.7ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 08:29:05 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/usuarios/sign_out" for 127.0.0.1 at 2017-05-23 08:29:07 -0300
+
+ActionController::RoutingError (No route matches [GET] "/usuarios/sign_out"):
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:38:in `call_app'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `block in call'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `block in tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:26:in `tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `tagged'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.7) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.7) lib/rack/runtime.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.7) lib/rack/lock.rb:17:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.7) lib/rack/sendfile.rb:113:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/engine.rb:518:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/application.rb:165:in `call'
+  rack (1.6.7) lib/rack/lock.rb:17:in `call'
+  rack (1.6.7) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.7) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/routes/_table.html.erb (20.9ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (67.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (33.9ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT "produtos".* FROM "produtos"
+  Rendered produtos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 74ms (Views: 73.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-0ef5b3fd87bb7aa2950132e9103b61b8511be17945d2553969d0beacfb7c43b0.css?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/tether/tether.self-0e1103bd72084f20bc17863434595ea99e999bcf530d80110698608f35ff5620.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/tether.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/bootstrap/util.self-5ae5b599fc2afe0f317696c5dfc0b51d6ce2ecb47d0341d1555b2fe971ada496.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-954f8384ac380992dd91b2b176b570b0792365a334efb758774c718d9628a329.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-f18afa468f85125228747ec83e00e56a26bbc71295e90a3848af25b258445615.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-5a586b490b4c9332249b231956b361b852b128a0d82f7f08549f205bba1bfeb0.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-94c7455a70c5bb5ad5b3eae0c70388160c238afdea0b48d5345587fd176fb52d.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/bootstrap/button.self-30412f39aaa761313878531076ce8187fe6c017e42111bf2c283fce4a7c850f8.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-a406636221efb5add01fbaa60c24ac0ae6bc0c57008d8e2503d68f49fbe75ad0.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-66781adda319363e67c65edfc73459411bd3948c0f32efddbc9928b810d5abf4.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-e3abc2817f699a2be95f78a4aff190ef7669d5590adbacd0c08867eb34ed16c6.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-636159b35205da4142a43bc02d2849d77d3ac07a0946211585cde15a9c6ff21f.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-dd8a9f3fa1f9fc58df30c7ed9a17dfc7303b812d72640899beee03609124b426.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-7d459fac34d4d96fd9d6da8efcd40dee55b66579a24ddcebf0a355c82dcad7e0.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2017-05-23 08:30:54 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 08:31:51 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `stringify_keys' for :delete:Symbol):
+    10: <h1><%= link_to 'Bendita Quitanda', root_path %></h1>
+    11: <% if current_usuario %> 
+    12: 	<%= current_usuario.email %>
+    13: 	<%= link_to 'Sair', destroy_usuario_session_path, :delete %>
+    14: <% end %>
+    15: <hr/>
+    16: <%= yield %>
+  app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___4166067897044964722_69958157648560'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 08:32:05 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/07079802750/dados/Desenvolvimento/rails/benditaquitanda/app/views/layouts/application.html.erb:13: syntax error, unexpected ':', expecting ')'
+...usuario_session_path, :method :delete );@output_buffer.safe_...
+...                               ^):
+  app/views/layouts/application.html.erb:13: syntax error, unexpected ':', expecting ')'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 08:32:15 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/07079802750/dados/Desenvolvimento/rails/benditaquitanda/app/views/layouts/application.html.erb:13: syntax error, unexpected ':', expecting =>
+...suario_session_path, {:method :delete} );@output_buffer.safe...
+...                               ^
+/home/07079802750/dados/Desenvolvimento/rails/benditaquitanda/app/views/layouts/application.html.erb:14: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/07079802750/dados/Desenvolvimento/rails/benditaquitanda/app/views/layouts/application.html.erb:20: syntax error, unexpected keyword_ensure, expecting ')'
+/home/07079802750/dados/Desenvolvimento/rails/benditaquitanda/app/views/layouts/application.html.erb:22: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/layouts/application.html.erb:13: syntax error, unexpected ':', expecting =>
+  app/views/layouts/application.html.erb:14: syntax error, unexpected keyword_end, expecting ')'
+  app/views/layouts/application.html.erb:20: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/layouts/application.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (11.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (23.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 08:32:35 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 64ms (Views: 63.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/tether.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/tether/tether.self-0e1103bd72084f20bc17863434595ea99e999bcf530d80110698608f35ff5620.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-5a586b490b4c9332249b231956b361b852b128a0d82f7f08549f205bba1bfeb0.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-f18afa468f85125228747ec83e00e56a26bbc71295e90a3848af25b258445615.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/bootstrap/button.self-30412f39aaa761313878531076ce8187fe6c017e42111bf2c283fce4a7c850f8.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/bootstrap/util.self-5ae5b599fc2afe0f317696c5dfc0b51d6ce2ecb47d0341d1555b2fe971ada496.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-94c7455a70c5bb5ad5b3eae0c70388160c238afdea0b48d5345587fd176fb52d.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-954f8384ac380992dd91b2b176b570b0792365a334efb758774c718d9628a329.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-e3abc2817f699a2be95f78a4aff190ef7669d5590adbacd0c08867eb34ed16c6.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-a406636221efb5add01fbaa60c24ac0ae6bc0c57008d8e2503d68f49fbe75ad0.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-dd8a9f3fa1f9fc58df30c7ed9a17dfc7303b812d72640899beee03609124b426.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-66781adda319363e67c65edfc73459411bd3948c0f32efddbc9928b810d5abf4.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-636159b35205da4142a43bc02d2849d77d3ac07a0946211585cde15a9c6ff21f.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-7d459fac34d4d96fd9d6da8efcd40dee55b66579a24ddcebf0a355c82dcad7e0.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started GET "/assets/application.self-0ef5b3fd87bb7aa2950132e9103b61b8511be17945d2553969d0beacfb7c43b0.css?body=1" for 127.0.0.1 at 2017-05-23 08:32:36 -0300
+
+
+Started DELETE "/usuarios/sign_out" for 127.0.0.1 at 2017-05-23 08:32:58 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5uvV6qYAXXGSCUcL0MMGxbLnKJ33gKy4UP+7zN3Jlj2xrCs/3R5X5PGbDdyEbdIN9k4cjduwScSZ2+61wOeuiw=="}
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 37ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 08:32:59 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 44ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/encomendas" for 127.0.0.1 at 2017-05-23 08:33:15 -0300
+Processing by EncomendasController#index as HTML
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT "encomendas".* FROM "encomendas"
+  Rendered encomendas/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 08:33:16 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categorizacaos" for 127.0.0.1 at 2017-05-23 08:33:17 -0300
+Processing by CategorizacaosController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-05-23 08:33:17 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 78ms (Views: 75.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 08:33:19 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categorizacaos" for 127.0.0.1 at 2017-05-23 08:33:31 -0300
+Processing by CategorizacaosController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-05-23 08:33:31 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 49ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/password/new" for 127.0.0.1 at 2017-05-23 08:33:42 -0300
+Processing by Devise::PasswordsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/passwords/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 79ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 08:33:47 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 56ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categorizacaos" for 127.0.0.1 at 2017-05-23 08:33:49 -0300
+Processing by CategorizacaosController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-05-23 08:33:49 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 63ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-23 08:33:55 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 64ms (Views: 63.7ms | ActiveRecord: 0.0ms)

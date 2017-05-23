@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   resources :pedidos
   resources :encomendas
   resources :enderecos
-  resources :usuarios
   resources :produtos
   resources :unidades
   resources :categorizacaos

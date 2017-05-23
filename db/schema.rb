@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170522111443) do
+ActiveRecord::Schema.define(version: 20170523110533) do
 
   create_table "categorizacaos", force: :cascade do |t|
     t.string   "nome"
@@ -93,10 +93,6 @@ ActiveRecord::Schema.define(version: 20170522111443) do
   end
 
   create_table "usuarios", force: :cascade do |t|
-    t.string   "nome"
-    t.boolean  "admin"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -107,6 +103,8 @@ ActiveRecord::Schema.define(version: 20170522111443) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
   end
 
   add_index "usuarios", ["email"], name: "index_usuarios_on_email", unique: true
