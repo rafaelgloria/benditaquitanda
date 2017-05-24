@@ -11,8 +11,21 @@
 <% if current_usuario %> 
 	| <%= current_usuario.email %>
 	| <%= link_to 'Sair', destroy_usuario_session_path, {method: 'DELETE'} %>
-<% end %>
+<hr />
+<nav class="navbar navbar-default">
+  	<div class="container-fluid">
+		<div class="navbar-header">
+    		<%= link_to 'Categorias', categorizacoes_path, class: "navbar-brand" %>
+			<%= link_to 'Encomendas', encomendas_path, class: "navbar-brand" %>
+			<%= link_to 'Endereços', enderecos_path, class: "navbar-brand" %>
+			<%= link_to 'Pedidos', pedidos_path, class: "navbar-brand" %>
+			<%= link_to 'Produtos', produtos_path, class: "navbar-brand" %>
+			<%= link_to 'Unidades', unidades_path, class: "navbar-brand" %>
+    	</div>
+	</div>
+</nav>
 <hr/>
+<% end %>
 <%= yield %>
 </body>
 </html>

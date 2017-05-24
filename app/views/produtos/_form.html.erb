@@ -28,8 +28,8 @@
     <%= f.text_field :descricao %>
   </div>
   <div class="field">
-    <%= f.label :valorunitario %><br>
-    <%= f.text_field :valorunitario %>
+    <%= f.label "Valor (reais)" %><br>
+    <%= f.number_field :valorunitario, step: 0.5%>
   </div>
   <div class="actions">
     <%= f.submit %>

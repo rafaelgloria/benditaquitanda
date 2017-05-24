@@ -25,8 +25,8 @@
       <%= ff.number_field(:quantidade, in: 0..100) %>
       <%= label_tag ff.object.produto.nome %> -  
       <%= ff.hidden_field :produto_id %>
-      <%= label_tag ff.object.produto.descricao %>
-      R$<%= label_tag ff.object.produto.valorunitario %>
+      <%= label_tag ff.object.produto.descricao %> - 
+      <%= label_tag number_to_currency(ff.object.produto.valorunitario) %>
     </div>
   <% end %>
   </div>

@@ -7,12 +7,12 @@
 
 <p>
   <strong>Dataentrega:</strong>
-  <%= @encomenda.dataentrega %>
+  <%= l(@encomenda.dataentrega) %>
 </p>
 
 <p>
   <strong>Datalimitepedido:</strong>
-  <%= @encomenda.datalimitepedido %>
+  <%= l(@encomenda.datalimitepedido) %>
 </p>
 
 <%= link_to 'Edit', edit_encomenda_path(@encomenda) %> |

@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Encomendas</h1>
+<h1>Encomendas</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Endereco</th>
@@ -16,11 +16,11 @@
     <% @encomendas.each do |encomenda| %>
       <tr>
         <td><%= encomenda.endereco.logradouro %></td>
-        <td><%= encomenda.dataentrega %></td>
-        <td><%= encomenda.datalimitepedido %></td>
-        <td><%= link_to 'Show', encomenda %></td>
-        <td><%= link_to 'Edit', edit_encomenda_path(encomenda) %></td>
-        <td><%= link_to 'Destroy', encomenda, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= l(encomenda.dataentrega) %></td>
+        <td><%= l(encomenda.datalimitepedido) %></td>
+        <td><%= link_to t(:detalhar), encomenda %></td>
+        <td><%= link_to t(:editar), edit_encomenda_path(encomenda) %></td>
+        <td><%= link_to t(:excluir), encomenda, method: :delete, data: { confirm: t(:confirmaexclusao) } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Encomenda', new_encomenda_path %>
+<%= link_to 'Nova Encomenda', new_encomenda_path %>

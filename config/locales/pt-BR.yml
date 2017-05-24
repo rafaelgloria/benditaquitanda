@@ -1,4 +1,9 @@
 pt-BR:
+  detalhar: "Detalhar"
+  editar: "Editar"
+  excluir: "Excluir"
+  confirmaexclusao: "Confirma exclusão?"
+
   activerecord:
     errors:
       messages:
@@ -214,7 +219,8 @@ pt-BR:
   time:
     am: ''
     formats:
-      default: "%a, %d de %B de %Y, %H:%M:%S %z"
+      #default: "%a, %d de %B de %Y, %H:%M:%S %z"
+      default: "%d/%m/%Y, %H:%M"
       long: "%d de %B de %Y, %H:%M"
       short: "%d de %B, %H:%M"
     pm: ''
