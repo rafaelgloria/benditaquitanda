@@ -2,29 +2,31 @@
 
 <h1>Encomendas</h1>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Endereco</th>
-      <th>Dataentrega</th>
-      <th>Datalimitepedido</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @encomendas.each do |encomenda| %>
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
       <tr>
-        <td><%= encomenda.endereco.logradouro %></td>
-        <td><%= l(encomenda.dataentrega) %></td>
-        <td><%= l(encomenda.datalimitepedido) %></td>
-        <td><%= link_to t(:detalhar), encomenda %></td>
-        <td><%= link_to t(:editar), edit_encomenda_path(encomenda) %></td>
-        <td><%= link_to t(:excluir), encomenda, method: :delete, data: { confirm: t(:confirmaexclusao) } %></td>
+        <th>Endereco</th>
+        <th>Dataentrega</th>
+        <th>Datalimitepedido</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+
+    <tbody>
+      <% @encomendas.each do |encomenda| %>
+        <tr>
+          <td><%= encomenda.endereco.logradouro %></td>
+          <td><%= l(encomenda.dataentrega) %></td>
+          <td><%= l(encomenda.datalimitepedido) %></td>
+          <td><%= link_to t(:detalhar), encomenda %></td>
+          <td><%= link_to t(:editar), edit_encomenda_path(encomenda) %></td>
+          <td><%= link_to t(:excluir), encomenda, method: :delete, data: { confirm: t(:confirmaexclusao) } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
 
 <br>
 

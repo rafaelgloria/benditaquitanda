@@ -10,5 +10,16 @@
   <%= @categorizacao.descricao %>
 </p>
 
+<div class="row">
+  <div class="col-md-1"><strong>Nome:</strong></div>
+  <div class="col-md-1"><%= @categorizacao.nome %></div>
+</div>
+
+<div class="row">
+  <div class="col-md-1"><strong>Descrição:</strong></div>
+  <div class="col-md-1"><%= @categorizacao.descricao %></div>
+</div>
+
+
 <%= link_to 'Editar', edit_categorizacao_path(@categorizacao) %> |
 <%= link_to 'Voltar', categorizacoes_path %>

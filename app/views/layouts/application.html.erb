@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <%= link_to 'Bendita Quitanda', root_path %>
@@ -12,19 +13,28 @@
 	| <%= current_usuario.email %>
 	| <%= link_to 'Sair', destroy_usuario_session_path, {method: 'DELETE'} %>
 <hr />
-<nav class="navbar navbar-default">
-  	<div class="container-fluid">
-		<div class="navbar-header">
-    		<%= link_to 'Categorias', categorizacoes_path, class: "navbar-brand" %>
+<nav>
+  	<ul class="nav nav-tabs">
+		<li role="navigation" class="active">
+	    	<%= link_to 'Categorias', categorizacoes_path, class: "navbar-brand" %>
+	    </li>
+	    <li role="navigation">
 			<%= link_to 'Encomendas', encomendas_path, class: "navbar-brand" %>
+		</li>
+		<li role="navigation">
 			<%= link_to 'Endereços', enderecos_path, class: "navbar-brand" %>
+		</li>
+		<li role="navigation">
 			<%= link_to 'Pedidos', pedidos_path, class: "navbar-brand" %>
+		</li>
+		<li role="navigation">
 			<%= link_to 'Produtos', produtos_path, class: "navbar-brand" %>
+		</li>
+		<li role="navigation">
 			<%= link_to 'Unidades', unidades_path, class: "navbar-brand" %>
-    	</div>
-	</div>
+		</li>
+	</ul>
 </nav>
-<hr/>
 <% end %>
 <%= yield %>
 </body>
