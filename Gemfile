@@ -26,13 +26,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gemas novas
 
 # bootstrap
-source 'https://rails-assets.org' do
-  gem 'rails-assets-tether', '>= 1.3.3'
-end
-gem 'bootstrap', '~> 4.0.0.alpha6'
+#source 'https://rails-assets.org' do
+#  gem 'rails-assets-tether', '>= 1.3.3'
+#end
+#gem 'bootstrap', '~> 4.0.0.alpha6'
 
 # twitter bootstrap
-# gem 'twitter-bootstrap-rails'
+gem 'twitter-bootstrap-rails'
 
 # cocoon - form fields for com ajax / javascript
 gem 'cocoon'

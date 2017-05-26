@@ -25,5 +25,5 @@
   <%= number_to_currency(@produto.valorunitario) %>
 </p>
 
-<%= link_to 'Editar', edit_produto_path(@produto) %> |
-<%= link_to 'Voltar', produtos_path %>
+<%= link_to t(:detalhar), edit_produto_path(@produto) %> |
+<%= link_to t(:voltar), produtos_path %>

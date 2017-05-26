@@ -3,6 +3,7 @@ pt-BR:
   editar: "Editar"
   excluir: "Excluir"
   confirmaexclusao: "Confirma exclusão?"
+  voltar: "Voltar"
 
   activerecord:
     errors:
