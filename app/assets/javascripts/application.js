@@ -15,5 +15,5 @@
 //= require turbolinks
 //= require cocoon
 //= require tether
-//= require bootstrap-sprockets
+//= require bootstrap
 //= require_tree .
