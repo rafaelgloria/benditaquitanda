@@ -11,31 +11,47 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :logradouro %><br>
-    <%= f.text_field :logradouro %>
+<div class="form-horizontal">
+  <div class="form-group">
+    <%= f.label :logradouro, class: 'col-sm-2 control-label' %>
+    <div class="col-sm-8">
+      <%= f.text_field :logradouro, class: 'form-control' %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :numero %><br>
-    <%= f.number_field :numero %>
+  <div class="form-group">
+    <%= f.label :numero, class: 'col-sm-2 control-label' %>
+    <div class="col-sm-8">
+      <%= f.text_field :numero, class: 'form-control' %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :cep %><br>
-    <%= f.text_field :cep %>
+  <div class="form-group">
+    <%= f.label :cep, class: 'col-sm-2 control-label' %>
+    <div class="col-sm-8">
+      <%= f.text_field :cep, class: 'form-control' %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :bairro %><br>
-    <%= f.text_field :bairro %>
+  <div class="form-group">
+    <%= f.label :bairro, class: 'col-sm-2 control-label' %>
+    <div class="col-sm-8">
+      <%= f.text_field :bairro, class: 'form-control' %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :municipio %><br>
-    <%= f.text_field :municipio %>
+  <div class="form-group">
+    <%= f.label :municipio, class: 'col-sm-2 control-label' %>
+    <div class="col-sm-8">
+      <%= f.text_field :municipio, class: 'form-control' %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :estado %><br>
-    <%= f.text_field :estado %>
+  <div class="form-group">
+    <%= f.label :estado, class: 'col-sm-2 control-label' %>
+    <div class="col-sm-8">
+      <%= f.text_field :estado, class: 'form-control' %>
+    </div>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= f.submit class: 'btn btn-default' %>
+    </div>
   </div>
+</div>
 <% end %>

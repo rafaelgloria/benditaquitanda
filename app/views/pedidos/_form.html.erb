@@ -11,27 +11,41 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :usuario_id %><br>
-    <%= f.collection_select :usuario_id, Usuario.order(:email),:id,:email, include_blank: true %>
-  </div>
-  <div class="field">
-    <%= f.label :encomenda_id %><br>
-    <%= f.collection_select :encomenda_id, Encomenda.order(:dataentrega),:id,:dataentrega, include_blank: true %>
-  </div>
-  <div>
-    <%= f.fields_for :itempedidos do |ff| %>
-    <div class="field">
-      <%= ff.number_field(:quantidade, in: 0..100) %>
-      <%= label_tag ff.object.produto.nome %> -  
-      <%= ff.hidden_field :produto_id %>
-      <%= label_tag ff.object.produto.descricao %> - 
-      <%= label_tag number_to_currency(ff.object.produto.valorunitario) %>
+  <div class="form-horizontal">
+    <div class="form-group">
+      <%= f.label :usuario_id, class: 'col-sm-2 control-label' %>
+      <div class="col-sm-8">
+        <%= f.collection_select :usuario_id, Usuario.order(:email),:id,:email, include_blank: true, class: 'form-control' %>
+      </div>
     </div>
-  <% end %>
-  </div>
-  <br/>
-  <div class="actions">
-    <%= f.submit %>
+    <div class="form-group">
+      <%= f.label :encomenda_id, class: 'col-sm-2 control-label' %>
+      <div class="col-sm-8">
+        <%= f.collection_select :encomenda_id, Encomenda.order(:dataentrega),:id,:dataentrega, include_blank: true, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-2 control-label">
+        <%= label_tag "Itens" %>
+      </div>
+    </div>
+    <%= f.fields_for :itempedidos do |ff| %>
+    <div class="form-group">
+      <div class="col-sm-2 control-label">
+        <%= label_tag ff.object.produto.nome %>
+      </div>
+      <div class="col-sm-8">
+        <%= ff.number_field(:quantidade, in: 0..100) %>
+        <%= ff.hidden_field :produto_id %>
+        <%= label_tag ff.object.produto.descricao %> - 
+        <%= label_tag number_to_currency(ff.object.produto.valorunitario) %>
+      </div>
+    </div>
+    <% end %>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <%= f.submit class: 'btn btn-default' %>
+      </div>
+    </div>
   </div>
 <% end %>
