@@ -11,27 +11,41 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :categorizacao_id %>
-    <%= f.collection_select :categorizacao_id, Categorizacao.order(:nome),:id,:nome, include_blank: true %>
-  </div>
-  <div class="field">
-    <%= f.label :unidade_id %>
-    <%= f.collection_select :unidade_id, Unidade.order(:nome),:id,:nome, include_blank: true %>
-  </div>
-  <div class="field">
-    <%= f.label :nome %><br>
-    <%= f.text_field :nome %>
-  </div>
-  <div class="field">
-    <%= f.label :descricao %><br>
-    <%= f.text_field :descricao %>
-  </div>
-  <div class="field">
-    <%= f.label "Valor (reais)" %><br>
-    <%= f.number_field :valorunitario, step: 0.5%>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-horizontal">
+    <div class="form-group">
+      <%= f.label :categorizacao_id, class: 'col-sm-2 control-label' %>
+      <div class="col-sm-8">
+        <%= f.collection_select :categorizacao_id, Categorizacao.order(:nome),:id,:nome, include_blank: true, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :unidade_id, class: 'col-sm-2 control-label' %>
+      <div class="col-sm-8">
+        <%= f.collection_select :unidade_id, Unidade.order(:nome),:id,:nome, include_blank: true, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :nome, class: 'col-sm-2 control-label' %>
+      <div class="col-sm-8">
+        <%= f.text_field :nome, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :descricao, class: 'col-sm-2 control-label' %>
+      <div class="col-sm-8">
+        <%= f.text_field :descricao, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label "Valor (reais)", class: 'col-sm-2 control-label' %>
+      <div class="col-sm-8">
+        <%= f.number_field :valorunitario, step: 0.5, in: 0..1000, class: 'form-control'%>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <%= f.submit class: 'btn btn-default' %>
+      </div>
+    </div>
   </div>
 <% end %>
