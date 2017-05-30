@@ -66648,3 +66648,374 @@ Processing by WelcomeController#index as HTML
   [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
 Completed 200 OK in 51ms (Views: 51.0ms | ActiveRecord: 0.1ms)
 >>>>>>> 316dcbf426c8becda6d1567cd37a7ff7b1e8610e
+
+
+Started GET "/" for ::1 at 2017-05-29 21:59:27 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.0ms)
+  [1m[35mUsuario Load (0.4ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 881ms (Views: 856.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-29 21:59:28 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mPedido Load (0.3ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  [1m[35mUsuario Load (0.3ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEncomenda Load (0.3ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEndereco Load (0.4ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (110.9ms)
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 295ms (Views: 263.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.self-9f0f61b9cbd3faa0aa25bc2b395c423311493303c9acbb819ca1e5252d8aac7a.css?body=1" for ::1 at 2017-05-29 21:59:28 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for ::1 at 2017-05-29 21:59:28 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for ::1 at 2017-05-29 21:59:28 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for ::1 at 2017-05-29 21:59:28 -0300
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-29 21:59:28 -0300
+
+
+Started GET "/assets/categorizacoes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-29 21:59:28 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-29 21:59:28 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-29 21:59:28 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-29 21:59:28 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-29 21:59:28 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-29 21:59:28 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-29 21:59:28 -0300
+
+
+Started GET "/assets/scaffolds.self-930de29a197b8d70781cdae9e3aab47092b733c019825bb1b6dc3ba4c999de26.css?body=1" for ::1 at 2017-05-29 21:59:28 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-29 21:59:28 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-29 21:59:28 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/categorizacoes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2017-05-29 21:59:29 -0300
+
+
+Started GET "/encomendas" for ::1 at 2017-05-29 21:59:48 -0300
+Processing by EncomendasController#index as HTML
+  [1m[35mEncomenda Load (0.2ms)[0m  SELECT "encomendas".* FROM "encomendas"
+  [1m[36mEndereco Load (0.2ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (5.6ms)
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 161ms (Views: 159.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/encomendas/new" for ::1 at 2017-05-29 21:59:50 -0300
+Processing by EncomendasController#new as HTML
+  [1m[36mEndereco Load (2.0ms)[0m  [1mSELECT "enderecos".* FROM "enderecos"  ORDER BY "enderecos"."logradouro" ASC[0m
+  Rendered encomendas/_form.html.erb (48.9ms)
+  Rendered encomendas/new.html.erb within layouts/application (61.6ms)
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 194ms (Views: 190.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/enderecos" for ::1 at 2017-05-29 21:59:54 -0300
+Processing by EnderecosController#index as HTML
+  [1m[36mEndereco Load (0.3ms)[0m  [1mSELECT "enderecos".* FROM "enderecos"[0m
+  Rendered enderecos/index.html.erb within layouts/application (5.1ms)
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 147ms (Views: 145.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/enderecos/new" for ::1 at 2017-05-29 21:59:55 -0300
+Processing by EnderecosController#new as HTML
+  Rendered enderecos/_form.html.erb (21.4ms)
+  Rendered enderecos/new.html.erb within layouts/application (25.8ms)
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 172ms (Views: 171.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-29 22:00:02 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 148ms (Views: 146.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-05-29 22:00:09 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mPedido Load (0.3ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEncomenda Load (0.2ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEndereco Load (0.1ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (6.9ms)
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 166ms (Views: 164.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-05-29 22:00:09 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 179ms (Views: 178.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-29 22:00:17 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 137ms (Views: 136.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-29 22:00:44 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 140ms (Views: 138.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categorizacoes" for ::1 at 2017-05-29 22:00:45 -0300
+Processing by CategorizacoesController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategorizacao Load (0.6ms)[0m  SELECT "categorizacoes".* FROM "categorizacoes"
+  Rendered categorizacoes/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 127ms (Views: 114.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/categorizacoes/new" for ::1 at 2017-05-29 22:00:50 -0300
+Processing by CategorizacoesController#new as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered categorizacoes/_form.html.erb (2.8ms)
+  Rendered categorizacoes/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 122ms (Views: 116.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categorizacoes" for ::1 at 2017-05-29 22:00:57 -0300
+Processing by CategorizacoesController#index as HTML
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCategorizacao Load (0.2ms)[0m  [1mSELECT "categorizacoes".* FROM "categorizacoes"[0m
+  Rendered categorizacoes/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 120ms (Views: 117.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/unidades" for ::1 at 2017-05-29 22:00:58 -0300
+Processing by UnidadesController#index as HTML
+  [1m[35mUnidade Load (0.6ms)[0m  SELECT "unidades".* FROM "unidades"
+  Rendered unidades/index.html.erb within layouts/application (8.7ms)
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 152ms (Views: 146.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/unidades/new" for ::1 at 2017-05-29 22:01:00 -0300
+Processing by UnidadesController#new as HTML
+  Rendered unidades/_form.html.erb (20.3ms)
+  Rendered unidades/new.html.erb within layouts/application (23.1ms)
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 145ms (Views: 144.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/usuarios/sign_out" for ::1 at 2017-05-29 22:01:15 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"X8YgYybza+nOsdc6+jun351wEq0+a0Ta3fzjRHgNoRd6c/bYjPUJUWOpo859JKRpY49KtOrjwQ1IEWUhliFsxA=="}
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-29 22:01:15 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 123ms (Views: 122.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-29 22:01:17 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 121ms (Views: 120.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categorizacoes" for ::1 at 2017-05-29 22:01:21 -0300
+Processing by CategorizacoesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for ::1 at 2017-05-29 22:01:21 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.9ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 129ms (Views: 126.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/sign_in" for ::1 at 2017-05-29 22:01:32 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aO9Hht/rwQFXA2gKjMiZcJfJH2tfsEKU9WJG51/yK3voLvipkhqz46wOZqUxPfsprd+smnAuQfkpBlvbFE5gog==", "usuario"=>{"email"=>"gloria.rafael@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUsuario Load (0.3ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."email" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["email", "gloria.rafael@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.5ms)[0m  UPDATE "usuarios" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "usuarios"."id" = ?  [["last_sign_in_at", "2017-05-26 23:36:05.105995"], ["current_sign_in_at", "2017-05-30 01:01:32.974736"], ["last_sign_in_ip", "::1"], ["sign_in_count", 4], ["updated_at", "2017-05-30 01:01:32.975654"], ["id", 1]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/categorizacoes
+Completed 302 Found in 246ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/categorizacoes" for ::1 at 2017-05-29 22:01:33 -0300
+Processing by CategorizacoesController#index as HTML
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCategorizacao Load (0.2ms)[0m  [1mSELECT "categorizacoes".* FROM "categorizacoes"[0m
+  Rendered categorizacoes/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 108ms (Views: 105.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/encomendas" for ::1 at 2017-05-29 22:01:49 -0300
+Processing by EncomendasController#index as HTML
+  [1m[35mEncomenda Load (0.2ms)[0m  SELECT "encomendas".* FROM "encomendas"
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (3.1ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 91ms (Views: 89.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/encomendas/new" for ::1 at 2017-05-29 22:01:53 -0300
+Processing by EncomendasController#new as HTML
+  [1m[36mEndereco Load (0.3ms)[0m  [1mSELECT "enderecos".* FROM "enderecos"  ORDER BY "enderecos"."logradouro" ASC[0m
+  Rendered encomendas/_form.html.erb (11.2ms)
+  Rendered encomendas/new.html.erb within layouts/application (13.9ms)
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 120ms (Views: 118.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/produtos" for ::1 at 2017-05-29 22:02:05 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mProduto Load (3.2ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mCategorizacao Load (0.2ms)[0m  SELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.2ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered produtos/index.html.erb within layouts/application (52.9ms)
+  [1m[35mUsuario Load (0.4ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 196ms (Views: 186.4ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/produtos/new" for ::1 at 2017-05-29 22:02:07 -0300
+Processing by ProdutosController#new as HTML
+  [1m[36mCategorizacao Load (0.2ms)[0m  [1mSELECT "categorizacoes".* FROM "categorizacoes"  ORDER BY "categorizacoes"."nome" ASC[0m
+  [1m[35mUnidade Load (0.2ms)[0m  SELECT "unidades".* FROM "unidades"  ORDER BY "unidades"."nome" ASC
+  Rendered produtos/_form.html.erb (13.4ms)
+  Rendered produtos/new.html.erb within layouts/application (17.2ms)
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 157ms (Views: 155.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-29 22:02:14 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUsuario Load (0.3ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 151ms (Views: 150.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-29 22:02:18 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 143ms (Views: 141.9ms | ActiveRecord: 0.2ms)
