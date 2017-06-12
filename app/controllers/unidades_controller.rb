@@ -1,5 +1,6 @@
 class UnidadesController < ApplicationController
   before_action :set_unidade, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_usuario!
 
   # GET /unidades
   # GET /unidades.json

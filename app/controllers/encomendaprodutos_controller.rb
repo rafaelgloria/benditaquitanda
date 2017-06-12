@@ -1,5 +1,6 @@
 class EncomendaprodutosController < ApplicationController
   before_action :set_encomendaproduto, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_usuario!
 
   # GET /encomendaprodutos
   # GET /encomendaprodutos.json

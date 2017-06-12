@@ -38,6 +38,8 @@ gem 'twitter-bootstrap-rails'
 gem 'cocoon'
 # Autenticação
 gem 'devise'
+# Autorização
+gem 'pundit'
 
 
 # Use ActiveModel has_secure_password
@@ -65,9 +67,9 @@ group :development do
   gem 'sqlite3'
 end
 
-group :production do
-	gem 'pg'
-end
+#group :production do
+#	gem 'pg'
+#end
 
-ruby "2.3.3"
+ruby "2.3.1"
 
