@@ -67019,3 +67019,2527 @@ Processing by WelcomeController#index as HTML
   Rendered welcome/index.html.erb within layouts/application (0.1ms)
   [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
 Completed 200 OK in 143ms (Views: 141.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-09 09:14:14 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 661ms (Views: 650.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-09 09:14:19 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 63ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categorizacoes" for 127.0.0.1 at 2017-06-09 09:14:20 -0300
+Processing by CategorizacoesController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-09 09:14:20 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (49.5ms)
+Completed 200 OK in 126ms (Views: 114.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-09 09:14:21 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 79ms (Views: 78.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/encomendas" for 127.0.0.1 at 2017-06-09 09:14:22 -0300
+Processing by EncomendasController#index as HTML
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT "encomendas".* FROM "encomendas"
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (68.3ms)
+Completed 200 OK in 248ms (Views: 138.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/enderecos" for 127.0.0.1 at 2017-06-09 09:14:27 -0300
+Processing by EnderecosController#index as HTML
+  [1m[35mEndereco Load (0.2ms)[0m  SELECT "enderecos".* FROM "enderecos"
+  Rendered enderecos/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 77ms (Views: 75.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pedidos" for 127.0.0.1 at 2017-06-09 09:14:29 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mPedido Load (0.1ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEndereco Load (0.1ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 145ms (Views: 63.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2017-06-09 09:14:31 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered produtos/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 108ms (Views: 89.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/unidades" for 127.0.0.1 at 2017-06-09 09:14:39 -0300
+Processing by UnidadesController#index as HTML
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT "unidades".* FROM "unidades"
+  Rendered unidades/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 63ms (Views: 62.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2017-06-09 09:14:44 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.0ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered produtos/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/unidades" for 127.0.0.1 at 2017-06-09 09:14:47 -0300
+Processing by UnidadesController#index as HTML
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT "unidades".* FROM "unidades"
+  Rendered unidades/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/unidades/new" for 127.0.0.1 at 2017-06-09 09:14:48 -0300
+Processing by UnidadesController#new as HTML
+  Rendered unidades/_form.html.erb (2.0ms)
+  Rendered unidades/new.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 331ms (Views: 331.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/unidades" for 127.0.0.1 at 2017-06-09 09:15:00 -0300
+Processing by UnidadesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zEGSyqVee5diM807fJjVAb8x2JE8868yn0noaxIdBnqCWfj15EOe/L4AO3+KgdY5Oo6s7KwTft27h2rGp4+k0A==", "unidade"=>{"nome"=>"penca", "descricao"=>"Penca"}, "commit"=>"Criar Unidade"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "unidades" ("nome", "descricao", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["nome", "penca"], ["descricao", "Penca"], ["created_at", "2017-06-09 12:15:00.727093"], ["updated_at", "2017-06-09 12:15:00.727093"]]
+  [1m[36m (169.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/unidades/2
+Completed 302 Found in 173ms (ActiveRecord: 169.7ms)
+
+
+Started GET "/unidades/2" for 127.0.0.1 at 2017-06-09 09:15:00 -0300
+Processing by UnidadesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered unidades/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 81ms (Views: 66.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2017-06-09 09:15:05 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.0ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered produtos/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 69ms (Views: 67.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/produtos/1/edit" for 127.0.0.1 at 2017-06-09 09:15:11 -0300
+Processing by ProdutosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduto Load (0.1ms)[0m  SELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCategorizacao Load (0.2ms)[0m  [1mSELECT "categorizacoes".* FROM "categorizacoes"  ORDER BY "categorizacoes"."nome" ASC[0m
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT "unidades".* FROM "unidades"  ORDER BY "unidades"."nome" ASC
+  Rendered produtos/_form.html.erb (56.7ms)
+  Rendered produtos/edit.html.erb within layouts/application (80.8ms)
+Completed 200 OK in 199ms (Views: 197.9ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/produtos/1" for 127.0.0.1 at 2017-06-09 09:15:18 -0300
+Processing by ProdutosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IlO9tFpYj+bjoS/qugkRs6hAQOW+/Q1J4fMFfru3LdJsS9eLG0VqjT+S2a5MEBKLLf80mC4d3KbFPYfTDiWPeA==", "produto"=>{"categorizacao_id"=>"1", "unidade_id"=>"2", "nome"=>"Banana", "descricao"=>"Penca", "valorunitario"=>"12.0"}, "commit"=>"Atualizar Produto", "id"=>"1"}
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "produtos" SET "unidade_id" = ?, "updated_at" = ? WHERE "produtos"."id" = ?[0m  [["unidade_id", 2], ["updated_at", "2017-06-09 12:15:18.997959"], ["id", 1]]
+  [1m[35m (95.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/produtos/1
+Completed 302 Found in 102ms (ActiveRecord: 96.5ms)
+
+
+Started GET "/produtos/1" for 127.0.0.1 at 2017-06-09 09:15:19 -0300
+Processing by ProdutosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered produtos/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 75ms (Views: 73.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2017-06-09 09:15:21 -0300
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.3ms)[0m  SELECT "produtos".* FROM "produtos"
+  [1m[36mCategorizacao Load (0.1ms)[0m  [1mSELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUnidade Load (0.0ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered produtos/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 76ms (Views: 74.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pedidos" for 127.0.0.1 at 2017-06-09 09:15:29 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mPedido Load (0.1ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEncomenda Load (0.0ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEndereco Load (0.0ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 71ms (Views: 69.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pedidos/new" for 127.0.0.1 at 2017-06-09 09:15:30 -0300
+Processing by PedidosController#new as HTML
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."email" ASC
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC[0m
+  Rendered pedidos/_form.html.erb (6.5ms)
+  Rendered pedidos/new.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 242ms (Views: 85.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pedidos" for 127.0.0.1 at 2017-06-09 09:15:42 -0300
+Processing by PedidosController#index as HTML
+  [1m[35mPedido Load (0.1ms)[0m  SELECT "pedidos".* FROM "pedidos"
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEncomenda Load (0.0ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEndereco Load (0.0ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 69ms (Views: 68.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-09 09:15:43 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 57ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categorizacoes" for 127.0.0.1 at 2017-06-09 09:15:44 -0300
+Processing by CategorizacoesController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-09 09:15:44 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-09 09:15:47 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 64ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-09 09:15:54 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 52ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/enderecos" for 127.0.0.1 at 2017-06-09 09:15:57 -0300
+Processing by EnderecosController#index as HTML
+  [1m[35mEndereco Load (0.2ms)[0m  SELECT "enderecos".* FROM "enderecos"
+  Rendered enderecos/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-09 09:16:07 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 68ms (Views: 67.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 12:52:16 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 657ms (Views: 646.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categorizacoes" for 127.0.0.1 at 2017-06-12 12:52:19 -0300
+Processing by CategorizacoesController#index as HTML
+Completed 401 Unauthorized in 58ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 12:52:19 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (50.8ms)
+Completed 200 OK in 132ms (Views: 107.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/encomendas" for 127.0.0.1 at 2017-06-12 12:52:22 -0300
+Processing by EncomendasController#index as HTML
+  [1m[35mEncomenda Load (0.2ms)[0m  SELECT "encomendas".* FROM "encomendas"
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (67.7ms)
+Completed 200 OK in 190ms (Views: 146.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/enderecos" for 127.0.0.1 at 2017-06-12 12:52:30 -0300
+Processing by EnderecosController#index as HTML
+  [1m[35mEndereco Load (0.2ms)[0m  SELECT "enderecos".* FROM "enderecos"
+  Rendered enderecos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 76ms (Views: 75.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pedidos" for 127.0.0.1 at 2017-06-12 12:52:31 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mPedido Load (0.2ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEndereco Load (0.0ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 86ms (Views: 64.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2017-06-12 12:52:31 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered produtos/index.html.erb within layouts/application (40.8ms)
+Completed 200 OK in 141ms (Views: 133.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/unidades" for 127.0.0.1 at 2017-06-12 12:52:32 -0300
+Processing by UnidadesController#index as HTML
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT "unidades".* FROM "unidades"
+  Rendered unidades/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 78ms (Views: 77.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/encomendas" for 127.0.0.1 at 2017-06-12 12:52:33 -0300
+Processing by EncomendasController#index as HTML
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"[0m
+  [1m[35mEndereco Load (0.1ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 68ms (Views: 67.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 12:52:35 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 65ms (Views: 64.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categorizacoes" for 127.0.0.1 at 2017-06-12 12:52:36 -0300
+Processing by CategorizacoesController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 12:52:36 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_up" for 127.0.0.1 at 2017-06-12 12:52:39 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/registrations/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 80ms (Views: 78.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 12:52:44 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 53ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categorizacoes" for 127.0.0.1 at 2017-06-12 12:52:57 -0300
+Processing by CategorizacoesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 12:52:57 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 68ms (Views: 66.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 12:53:00 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2s7SqOdklYzlP9H+7SGZbLegSyAou9FwQe3+of/GPlpbXT8+dnF/OqSdKdThEYIROiuIxkMlDvXntyEwQNFQGQ==", "usuario"=>{"email"=>"gloria.rafael@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."email" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["email", "gloria.rafael@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "usuarios" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "usuarios"."id" = ?[0m  [["last_sign_in_at", "2017-05-30 01:01:32.974736"], ["current_sign_in_at", "2017-06-12 15:53:00.366999"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 5], ["updated_at", "2017-06-12 15:53:00.367811"], ["id", 1]]
+  [1m[35m (82.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/categorizacoes
+Completed 302 Found in 459ms (ActiveRecord: 83.5ms)
+
+
+Started GET "/categorizacoes" for 127.0.0.1 at 2017-06-12 12:53:00 -0300
+Processing by CategorizacoesController#index as HTML
+  [1m[36mUsuario Load (0.3ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT "categorizacoes".* FROM "categorizacoes"
+  Rendered categorizacoes/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 70ms (Views: 68.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/encomendas" for 127.0.0.1 at 2017-06-12 12:53:06 -0300
+Processing by EncomendasController#index as HTML
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"[0m
+  [1m[35mEndereco Load (0.1ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (1.9ms)
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/enderecos" for 127.0.0.1 at 2017-06-12 12:53:07 -0300
+Processing by EnderecosController#index as HTML
+  [1m[35mEndereco Load (0.1ms)[0m  SELECT "enderecos".* FROM "enderecos"
+  Rendered enderecos/index.html.erb within layouts/application (1.3ms)
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pedidos" for 127.0.0.1 at 2017-06-12 12:53:08 -0300
+Processing by PedidosController#index as HTML
+  [1m[35mPedido Load (0.1ms)[0m  SELECT "pedidos".* FROM "pedidos"
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (2.8ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 70ms (Views: 69.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2017-06-12 12:53:08 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered produtos/index.html.erb within layouts/application (7.0ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 83ms (Views: 82.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/unidades" for 127.0.0.1 at 2017-06-12 12:53:09 -0300
+Processing by UnidadesController#index as HTML
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT "unidades".* FROM "unidades"[0m
+  Rendered unidades/index.html.erb within layouts/application (1.8ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 72ms (Views: 71.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categorizacoes" for 127.0.0.1 at 2017-06-12 12:53:10 -0300
+Processing by CategorizacoesController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT "categorizacoes".* FROM "categorizacoes"
+  Rendered categorizacoes/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 90ms (Views: 87.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/encomendas" for 127.0.0.1 at 2017-06-12 12:53:13 -0300
+Processing by EncomendasController#index as HTML
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"[0m
+  [1m[35mEndereco Load (0.1ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 69ms (Views: 68.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/enderecos" for 127.0.0.1 at 2017-06-12 12:53:14 -0300
+Processing by EnderecosController#index as HTML
+  [1m[35mEndereco Load (0.1ms)[0m  SELECT "enderecos".* FROM "enderecos"
+  Rendered enderecos/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 68ms (Views: 66.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pedidos" for 127.0.0.1 at 2017-06-12 12:53:16 -0300
+Processing by PedidosController#index as HTML
+  [1m[35mPedido Load (0.1ms)[0m  SELECT "pedidos".* FROM "pedidos"
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (2.8ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 73ms (Views: 71.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/enderecos" for 127.0.0.1 at 2017-06-12 12:53:17 -0300
+Processing by EnderecosController#index as HTML
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT "enderecos".* FROM "enderecos"[0m
+  Rendered enderecos/index.html.erb within layouts/application (1.3ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 67ms (Views: 65.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pedidos" for 127.0.0.1 at 2017-06-12 12:53:18 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mPedido Load (0.1ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEndereco Load (0.2ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pedidos/1" for 127.0.0.1 at 2017-06-12 12:53:21 -0300
+Processing by PedidosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPedido Load (0.2ms)[0m  SELECT  "pedidos".* FROM "pedidos" WHERE "pedidos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pedidos/show.html.erb within layouts/application (2.1ms)
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 75ms (Views: 73.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pedidos" for 127.0.0.1 at 2017-06-12 12:53:23 -0300
+Processing by PedidosController#index as HTML
+  [1m[35mPedido Load (0.2ms)[0m  SELECT "pedidos".* FROM "pedidos"
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (3.7ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 68ms (Views: 66.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/unidades" for 127.0.0.1 at 2017-06-12 12:54:54 -0300
+Processing by UnidadesController#index as HTML
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT "unidades".* FROM "unidades"[0m
+  Rendered unidades/index.html.erb within layouts/application (1.5ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 64ms (Views: 63.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pedidos" for 127.0.0.1 at 2017-06-12 12:54:57 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mPedido Load (0.1ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEndereco Load (0.1ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (2.7ms)
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 75ms (Views: 74.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pedidos/1" for 127.0.0.1 at 2017-06-12 12:55:00 -0300
+Processing by PedidosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPedido Load (0.1ms)[0m  SELECT  "pedidos".* FROM "pedidos" WHERE "pedidos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pedidos/show.html.erb within layouts/application (1.8ms)
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 61ms (Views: 59.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pedidos" for 127.0.0.1 at 2017-06-12 12:55:03 -0300
+Processing by PedidosController#index as HTML
+  [1m[35mPedido Load (0.1ms)[0m  SELECT "pedidos".* FROM "pedidos"
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (2.6ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 57ms (Views: 56.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/encomendas" for 127.0.0.1 at 2017-06-12 12:55:04 -0300
+Processing by EncomendasController#index as HTML
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"[0m
+  [1m[35mEndereco Load (0.1ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (1.8ms)
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pedidos" for 127.0.0.1 at 2017-06-12 12:55:07 -0300
+Processing by PedidosController#index as HTML
+  [1m[35mPedido Load (0.1ms)[0m  SELECT "pedidos".* FROM "pedidos"
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (2.7ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 63ms (Views: 62.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pedidos/1" for 127.0.0.1 at 2017-06-12 12:55:09 -0300
+Processing by PedidosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPedido Load (0.1ms)[0m  [1mSELECT  "pedidos".* FROM "pedidos" WHERE "pedidos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pedidos/show.html.erb within layouts/application (1.4ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 64ms (Views: 63.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pedidos" for 127.0.0.1 at 2017-06-12 12:55:12 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mPedido Load (0.2ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEncomenda Load (0.2ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEndereco Load (0.1ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (4.0ms)
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 70ms (Views: 68.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 12:55:16 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 58ms (Views: 57.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/categorizacoes" for 127.0.0.1 at 2017-06-12 12:55:25 -0300
+Processing by CategorizacoesController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT "categorizacoes".* FROM "categorizacoes"
+  Rendered categorizacoes/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 60ms (Views: 58.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2017-06-12 12:55:29 -0300
+
+ActionController::RoutingError (No route matches [GET] "/usuarios"):
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:38:in `call_app'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `block in call'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `block in tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:26:in `tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `tagged'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/engine.rb:518:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/routes/_table.html.erb (13.5ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.7ms)
+
+
+Started DELETE "/usuarios/sign_out" for 127.0.0.1 at 2017-06-12 12:58:36 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qFiTE5+1S2+oQaAiaRVAchALoqndpWxpQ1eIi3xFEdaf33SM31chYAX5dxUItXSkzy6KaRsH65sNHNPuiRuWiQ=="}
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 12:58:36 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 60ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/edit" for 127.0.0.1 at 2017-06-12 12:58:42 -0300
+Processing by Devise::RegistrationsController#edit as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 12:58:42 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 12:58:50 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 13:05:17 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 353ms (Views: 346.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 13:05:19 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 65ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/unidades" for 127.0.0.1 at 2017-06-12 13:05:21 -0300
+Processing by UnidadesController#index as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 13:05:21 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 77ms (Views: 67.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pedidos" for 127.0.0.1 at 2017-06-12 13:05:22 -0300
+Processing by PedidosController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 13:05:22 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 73ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2017-06-12 13:05:23 -0300
+Processing by ProdutosController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 13:05:23 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/enderecos" for 127.0.0.1 at 2017-06-12 13:05:23 -0300
+Processing by EnderecosController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 13:05:23 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 65ms (Views: 64.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/encomendas" for 127.0.0.1 at 2017-06-12 13:05:24 -0300
+Processing by EncomendasController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 13:05:24 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categorizacoes" for 127.0.0.1 at 2017-06-12 13:05:25 -0300
+Processing by CategorizacoesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 13:05:25 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 13:05:25 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 60ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 13:05:27 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 61ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/encomendas" for 127.0.0.1 at 2017-06-12 13:05:31 -0300
+Processing by EncomendasController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 13:05:31 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 63ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categorizacoes" for 127.0.0.1 at 2017-06-12 13:05:32 -0300
+Processing by CategorizacoesController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 13:05:32 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 56ms (Views: 55.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 13:05:32 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 58ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/encomendas" for 127.0.0.1 at 2017-06-12 13:05:33 -0300
+Processing by EncomendasController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 13:05:33 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 64ms (Views: 63.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 13:05:34 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H9KXmUpMstQM0NwgjTqkRah+xnYmLV+NtK4z2oZYFj2+rDwsKJDmAS0O444aNHD+3vtLUA5P/+Jb3oyKhWigUw==", "usuario"=>{"email"=>"gloria.rafael@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUsuario Load (0.3ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."email" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["email", "gloria.rafael@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "usuarios" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "usuarios"."id" = ?  [["last_sign_in_at", "2017-06-12 15:53:00.366999"], ["current_sign_in_at", "2017-06-12 16:05:34.864966"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 6], ["updated_at", "2017-06-12 16:05:34.865785"], ["id", 1]]
+  [1m[36m (68.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/encomendas
+Completed 302 Found in 219ms (ActiveRecord: 69.2ms)
+
+
+Started GET "/encomendas" for 127.0.0.1 at 2017-06-12 13:05:34 -0300
+Processing by EncomendasController#index as HTML
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"[0m
+  [1m[35mEndereco Load (0.1ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 90ms (Views: 80.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/categorizacoes" for 127.0.0.1 at 2017-06-12 13:05:36 -0300
+Processing by CategorizacoesController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT "categorizacoes".* FROM "categorizacoes"
+  Rendered categorizacoes/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 83ms (Views: 74.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/encomendas" for 127.0.0.1 at 2017-06-12 13:05:36 -0300
+Processing by EncomendasController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT "encomendas".* FROM "encomendas"
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 84ms (Views: 82.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/enderecos" for 127.0.0.1 at 2017-06-12 13:05:37 -0300
+Processing by EnderecosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mEndereco Load (0.2ms)[0m  [1mSELECT "enderecos".* FROM "enderecos"[0m
+  Rendered enderecos/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 101ms (Views: 99.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pedidos" for 127.0.0.1 at 2017-06-12 13:05:37 -0300
+Processing by PedidosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPedido Load (0.1ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEndereco Load (0.1ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 72ms (Views: 65.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2017-06-12 13:05:38 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mProduto Load (0.2ms)[0m  SELECT "produtos".* FROM "produtos"
+  [1m[36mCategorizacao Load (0.1ms)[0m  [1mSELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered produtos/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 83ms (Views: 78.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/unidades" for 127.0.0.1 at 2017-06-12 13:05:39 -0300
+Processing by UnidadesController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT "unidades".* FROM "unidades"
+  Rendered unidades/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 69ms (Views: 67.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categorizacoes" for 127.0.0.1 at 2017-06-12 13:05:40 -0300
+Processing by CategorizacoesController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT "categorizacoes".* FROM "categorizacoes"
+  Rendered categorizacoes/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 59ms (Views: 57.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 13:05:43 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 63ms (Views: 62.5ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/usuarios/sign_out" for 127.0.0.1 at 2017-06-12 13:05:46 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/PD3n4knaU/+ELkn3FIBuvwAh8K4z94QnQgkL2OSZpZvaSl1iVyAQitHp0gXJveh+UoEXJEffd2q6J3J8QaCiQ=="}
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 13:05:46 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 57ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 13:20:08 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 795ms (Views: 787.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9f0f61b9cbd3faa0aa25bc2b395c423311493303c9acbb819ca1e5252d8aac7a.css?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/categorizacoes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/control_usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/scaffolds.self-8cb6d601a95977ef7f47acbe94649614ea7d2c7932897df8841b65d1f26b2d78.css?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/categorizacoes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/control_usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2017-06-12 13:20:09 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 13:21:15 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `usuarios_path' for #<#<Class:0x00000004d3cf08>:0x007f7c0d82b410>
+Did you mean?  usuario_session_path):
+    44:         	<%= link_to 'Unidades', unidades_path %>
+    45:         </li>
+    46:         <li >
+    47:           <%= link_to 'Usuários', usuarios_path %>
+    48:         </li>
+    49:       </ul>
+    50:       
+  app/views/layouts/application.html.erb:47:in `_app_views_layouts_application_html_erb___3068425106526865002_70085210080700'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9f0f61b9cbd3faa0aa25bc2b395c423311493303c9acbb819ca1e5252d8aac7a.css?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/categorizacoes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/control_usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/scaffolds.self-8cb6d601a95977ef7f47acbe94649614ea7d2c7932897df8841b65d1f26b2d78.css?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/categorizacoes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/control_usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2017-06-12 13:21:30 -0300
+
+
+Started GET "/unidades" for 127.0.0.1 at 2017-06-12 13:21:32 -0300
+Processing by UnidadesController#index as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 13:21:32 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 84ms (Views: 71.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/unidades" for 127.0.0.1 at 2017-06-12 13:21:34 -0300
+Processing by UnidadesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 13:21:34 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 67ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2017-06-12 13:21:42 -0300
+
+ActionController::RoutingError (No route matches [GET] "/usuarios"):
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:38:in `call_app'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `block in call'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `block in tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:26:in `tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `tagged'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/engine.rb:518:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 13:21:55 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 56ms (Views: 55.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/control_usuarios/index" for 127.0.0.1 at 2017-06-12 13:21:57 -0300
+Processing by ControlUsuariosController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 13:21:57 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 54ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 13:21:58 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SNqk0dJP+q3hHcBK0FQkmnMlMrVE86LcO/qZbp8dK8S6l0+k4+qqJhSeP1ErxRsqzpRixtRILlkMb48QQVePvQ==", "usuario"=>{"email"=>"gloria.rafael@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."email" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["email", "gloria.rafael@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "usuarios" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "usuarios"."id" = ?  [["last_sign_in_at", "2017-06-12 16:05:34.864966"], ["current_sign_in_at", "2017-06-12 16:21:59.028218"], ["sign_in_count", 7], ["updated_at", "2017-06-12 16:21:59.029146"], ["id", 1]]
+  [1m[36m (94.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/control_usuarios/index
+Completed 302 Found in 242ms (ActiveRecord: 94.5ms)
+
+
+Started GET "/control_usuarios/index" for 127.0.0.1 at 2017-06-12 13:21:59 -0300
+Processing by ControlUsuariosController#index as HTML
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered control_usuarios/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 62ms (Views: 60.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/encomendas/new" for 127.0.0.1 at 2017-06-12 13:22:05 -0300
+Processing by EncomendasController#new as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT "enderecos".* FROM "enderecos"  ORDER BY "enderecos"."logradouro" ASC[0m
+  Rendered encomendas/_form.html.erb (36.9ms)
+  Rendered encomendas/new.html.erb within layouts/application (52.9ms)
+Completed 200 OK in 142ms (Views: 131.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/encomendas" for 127.0.0.1 at 2017-06-12 13:22:07 -0300
+Processing by EncomendasController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"[0m
+  [1m[35mEndereco Load (0.2ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 72ms (Views: 69.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/encomendas" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+Processing by EncomendasController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT "encomendas".* FROM "encomendas"
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 61ms (Views: 59.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-9f0f61b9cbd3faa0aa25bc2b395c423311493303c9acbb819ca1e5252d8aac7a.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/categorizacoes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/control_usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/scaffolds.self-8cb6d601a95977ef7f47acbe94649614ea7d2c7932897df8841b65d1f26b2d78.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/categorizacoes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/control_usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:31 -0300
+
+
+Started GET "/encomendas" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+Processing by EncomendasController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"[0m
+  [1m[35mEndereco Load (0.1ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-9f0f61b9cbd3faa0aa25bc2b395c423311493303c9acbb819ca1e5252d8aac7a.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/categorizacoes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/control_usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/scaffolds.self-8cb6d601a95977ef7f47acbe94649614ea7d2c7932897df8841b65d1f26b2d78.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/categorizacoes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/control_usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2017-06-12 13:22:33 -0300
+
+
+Started GET "/control_usuarios/index" for 127.0.0.1 at 2017-06-12 13:22:38 -0300
+Processing by ControlUsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered control_usuarios/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 67ms (Views: 65.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categorizacoes" for 127.0.0.1 at 2017-06-12 13:22:41 -0300
+Processing by CategorizacoesController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategorizacao Load (0.1ms)[0m  SELECT "categorizacoes".* FROM "categorizacoes"
+  Rendered categorizacoes/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 65ms (Views: 62.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/encomendas" for 127.0.0.1 at 2017-06-12 13:22:42 -0300
+Processing by EncomendasController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT "encomendas".* FROM "encomendas"
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 68ms (Views: 66.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/enderecos" for 127.0.0.1 at 2017-06-12 13:22:43 -0300
+Processing by EnderecosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT "enderecos".* FROM "enderecos"[0m
+  Rendered enderecos/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 60ms (Views: 58.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pedidos" for 127.0.0.1 at 2017-06-12 13:22:44 -0300
+Processing by PedidosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPedido Load (0.2ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEndereco Load (0.1ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 71ms (Views: 65.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2017-06-12 13:22:44 -0300
+Processing by ProdutosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mProduto Load (0.1ms)[0m  SELECT "produtos".* FROM "produtos"
+  [1m[36mCategorizacao Load (0.1ms)[0m  [1mSELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered produtos/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 69ms (Views: 65.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/unidades" for 127.0.0.1 at 2017-06-12 13:22:45 -0300
+Processing by UnidadesController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUnidade Load (0.1ms)[0m  SELECT "unidades".* FROM "unidades"
+  Rendered unidades/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 73ms (Views: 71.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/control_usuarios/index" for 127.0.0.1 at 2017-06-12 13:22:45 -0300
+Processing by ControlUsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered control_usuarios/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 13:22:47 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 68ms (Views: 67.1ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/usuarios/sign_out" for 127.0.0.1 at 2017-06-12 13:22:49 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/wGbafms/77VjJq4o/FHa4pl5hMffLkDFx2Kw0WejUO8QYoida1p6Bupjax+QUwQ/Ek+qnpw+YURJNwb0/+6bA=="}
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 13:22:49 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 79ms (Views: 78.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/enderecos" for 127.0.0.1 at 2017-06-12 13:23:06 -0300
+Processing by EnderecosController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 13:23:06 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 69ms (Views: 68.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 13:23:07 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nTR2JlICuGZnUQkh+EUAtjdtDeg2myWU0e7BeFF7LJhj/G5YrG/l5tvBoG4SMIztXQH1P5jvD2bj5RvqTUjDDQ==", "usuario"=>{"email"=>"gloria.rafael@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."email" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["email", "gloria.rafael@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "usuarios" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "usuarios"."id" = ?[0m  [["last_sign_in_at", "2017-06-12 16:21:59.028218"], ["current_sign_in_at", "2017-06-12 16:23:07.416035"], ["sign_in_count", 8], ["updated_at", "2017-06-12 16:23:07.416760"], ["id", 1]]
+  [1m[35m (128.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/enderecos
+Completed 302 Found in 274ms (ActiveRecord: 128.8ms)
+
+
+Started GET "/enderecos" for 127.0.0.1 at 2017-06-12 13:23:07 -0300
+Processing by EnderecosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mEndereco Load (0.2ms)[0m  SELECT "enderecos".* FROM "enderecos"
+  Rendered enderecos/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 65ms (Views: 63.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 13:23:11 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 71ms (Views: 70.3ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/usuarios/sign_out" for 127.0.0.1 at 2017-06-12 13:25:07 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t6EG0wrkBPU7GjdUhZwzz5EbnObiyxItrIuIj45oWnpaXiFwwAU/PugVcpqnFJilx32LO9O7r44AUbu7wmC85g=="}
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 13:25:07 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 70ms (Views: 69.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/control_usuarios/index" for 127.0.0.1 at 2017-06-12 13:25:08 -0300
+Processing by ControlUsuariosController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 13:25:08 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 65ms (Views: 64.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 13:25:10 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 59ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddRoleToUsuarios (20170612163620)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "usuarios" ADD "role" integer DEFAULT 0[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170612163620"]]
+  [1m[36m (72.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_encomendaprodutos_on_produto_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_encomendaprodutos_on_produto_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_encomendaprodutos_on_encomenda_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_encomendaprodutos_on_encomenda_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_encomendas_on_endereco_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_encomendas_on_endereco_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_itempedidos_on_produto_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_itempedidos_on_produto_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_itempedidos_on_pedido_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_itempedidos_on_pedido_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_pedidos_on_encomenda_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_pedidos_on_encomenda_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_pedidos_on_usuario_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_pedidos_on_usuario_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_produtos_on_unidade_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_produtos_on_unidade_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_produtos_on_categorizacao_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_produtos_on_categorizacao_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_usuarios_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_usuarios_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_usuarios_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_usuarios_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 14:19:55 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 377ms (Views: 370.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/control_usuarios/index" for 127.0.0.1 at 2017-06-12 14:19:59 -0300
+Processing by ControlUsuariosController#index as HTML
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 14:19:59 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 78ms (Views: 67.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 14:20:00 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lQjb2nrkQQYqeZHdIJ8QpIX0up7240ljD/mqMbUQ8SgFKZcl1ofc03dpJbRhvwWHc2qWlkX1ahvB3uOUIsCK+A==", "usuario"=>{"email"=>"gloria.rafael@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."email" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["email", "gloria.rafael@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "usuarios" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "usuarios"."id" = ?  [["last_sign_in_at", "2017-06-12 16:23:07.416035"], ["current_sign_in_at", "2017-06-12 17:20:01.119275"], ["sign_in_count", 9], ["updated_at", "2017-06-12 17:20:01.120106"], ["id", 1]]
+  [1m[36m (122.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/control_usuarios/index
+Completed 302 Found in 276ms (ActiveRecord: 123.5ms)
+
+
+Started GET "/control_usuarios/index" for 127.0.0.1 at 2017-06-12 14:20:01 -0300
+Processing by ControlUsuariosController#index as HTML
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered control_usuarios/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 66ms (Views: 64.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/usuarios/sign_out" for 127.0.0.1 at 2017-06-12 14:20:09 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2Orf7I7Aaj4IRdwNArXO4KryN1XZGimxqoCU8Ax+BX7icFrFXoOdwnOiTDEyZ5Aq1IFhRotky+ZfCX/kZNJuVg=="}
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 14:20:09 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 63ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+  [1m[36mUsuario Load (2.5ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  [1m[35mUsuario Load (0.3ms)[0m  SELECT  "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "usuarios" SET "role" = ?, "updated_at" = ? WHERE "usuarios"."id" = ?  [["role", 1], ["updated_at", "2017-06-12 17:25:19.832995"], ["id", 1]]
+  [1m[36m (99.8ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 340ms (Views: 331.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9f0f61b9cbd3faa0aa25bc2b395c423311493303c9acbb819ca1e5252d8aac7a.css?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/categorizacoes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/control_usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/encomendas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/produtos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/scaffolds.self-8cb6d601a95977ef7f47acbe94649614ea7d2c7932897df8841b65d1f26b2d78.css?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/categorizacaos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/categorizacoes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/control_usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/itempedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/pedidos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-12 14:25:34 -0300
+
+
+Started GET "/control_usuarios/index" for 127.0.0.1 at 2017-06-12 14:25:35 -0300
+Processing by ControlUsuariosController#index as HTML
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 14:25:35 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 87ms (Views: 77.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/usuarios/sign_in" for 127.0.0.1 at 2017-06-12 14:25:37 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HPBw1u8sfjyL6qcYlbuRujjHfgppWa/EISEKAW9xN6yAVUoux32KJICJVp0uoAHzlfKtby/9E1TVID+/ApRUfQ==", "usuario"=>{"email"=>"gloria.rafael@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUsuario Load (0.3ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."email" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["email", "gloria.rafael@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "usuarios" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "usuarios"."id" = ?  [["last_sign_in_at", "2017-06-12 17:20:01.119275"], ["current_sign_in_at", "2017-06-12 17:25:37.366768"], ["sign_in_count", 10], ["updated_at", "2017-06-12 17:25:37.367573"], ["id", 1]]
+  [1m[36m (71.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/control_usuarios/index
+Completed 302 Found in 231ms (ActiveRecord: 72.1ms)
+
+
+Started GET "/control_usuarios/index" for 127.0.0.1 at 2017-06-12 14:25:37 -0300
+Processing by ControlUsuariosController#index as HTML
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered control_usuarios/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 65ms (Views: 62.8ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/usuarios/sign_out" for 127.0.0.1 at 2017-06-12 14:25:41 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mRm/vdFs7tR+JiQWYVdVlzjzLgEEYeBPcNiHLpxHCOqNo8eZ7lsTjbtmmyzNL8PhoerVzqBXTa/EFpKKdo7UVg=="}
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-12 14:25:41 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 58ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-07-10 20:58:56 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 1071ms (Views: 1058.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9f0f61b9cbd3faa0aa25bc2b395c423311493303c9acbb819ca1e5252d8aac7a.css?body=1" for ::1 at 2017-07-10 20:58:57 -0300
+
+
+Started GET "/assets/categorizacoes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/control_usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/categorizacaos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/encomendaprodutos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/enderecos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/itempedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/pedidos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/scaffolds.self-930de29a197b8d70781cdae9e3aab47092b733c019825bb1b6dc3ba4c999de26.css?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/unidades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/cocoon.self-f11c624796ad1beb726336f108d6e098a14ec5fe3f621f6b2fd2e53b2502b63b.js?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/categorizacoes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/control_usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/encomendas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/enderecos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/produtos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/unidades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2017-07-10 20:58:58 -0300
+
+
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2017-07-10 20:58:58 -0300
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.1ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.4ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (180.4ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (108.7ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (224.4ms)
+
+
+Started GET "/apple-touch-icon.png" for ::1 at 2017-07-10 20:58:58 -0300
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.9ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (150.2ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (90.9ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (216.0ms)
+
+
+Started GET "/categorizacoes" for ::1 at 2017-07-10 20:59:00 -0300
+Processing by CategorizacoesController#index as HTML
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/sign_in" for ::1 at 2017-07-10 20:59:00 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /Users/rafaelgloria/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 132ms (Views: 116.7ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/usuarios/sign_in" for ::1 at 2017-07-10 20:59:07 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hxE7TXVFWpykV6VYjmEaOktIkALQGAmufLZg+s8OCnDK/szUU2fRNuxrXpDITNVoOqlXe5Ik7g8LOb/ilIeBfQ==", "usuario"=>{"email"=>"gloria.rafael@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUsuario Load (1.3ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."email" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["email", "gloria.rafael@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  UPDATE "usuarios" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "usuarios"."id" = ?  [["last_sign_in_at", "2017-06-12 17:25:37.366768"], ["current_sign_in_at", "2017-07-10 23:59:07.522688"], ["current_sign_in_ip", "::1"], ["sign_in_count", 11], ["updated_at", "2017-07-10 23:59:07.523801"], ["id", 1]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/categorizacoes
+Completed 302 Found in 238ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/categorizacoes" for ::1 at 2017-07-10 20:59:07 -0300
+Processing by CategorizacoesController#index as HTML
+  [1m[35mUsuario Load (0.3ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCategorizacao Load (0.7ms)[0m  [1mSELECT "categorizacoes".* FROM "categorizacoes"[0m
+  Rendered categorizacoes/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 124ms (Views: 117.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/encomendas" for ::1 at 2017-07-10 20:59:09 -0300
+Processing by EncomendasController#index as HTML
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mEncomenda Load (0.3ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"[0m
+  [1m[35mEndereco Load (0.2ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (45.9ms)
+Completed 200 OK in 162ms (Views: 150.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/enderecos" for ::1 at 2017-07-10 20:59:10 -0300
+Processing by EnderecosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mEndereco Load (0.2ms)[0m  SELECT "enderecos".* FROM "enderecos"
+  Rendered enderecos/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 119ms (Views: 116.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-07-10 20:59:11 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPedido Load (0.3ms)[0m  SELECT "pedidos".* FROM "pedidos"
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEncomenda Load (0.2ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 150ms (Views: 138.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/produtos" for ::1 at 2017-07-10 20:59:12 -0300
+Processing by ProdutosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mCategorizacao Load (0.2ms)[0m  SELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.2ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "categorizacoes".* FROM "categorizacoes" WHERE "categorizacoes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.1ms)[0m  [1mSELECT  "unidades".* FROM "unidades" WHERE "unidades"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered produtos/index.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 153ms (Views: 146.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/unidades" for ::1 at 2017-07-10 20:59:13 -0300
+Processing by UnidadesController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUnidade Load (0.2ms)[0m  [1mSELECT "unidades".* FROM "unidades"[0m
+  Rendered unidades/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 124ms (Views: 121.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/control_usuarios/index" for ::1 at 2017-07-10 20:59:14 -0300
+Processing by ControlUsuariosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered control_usuarios/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 122ms (Views: 119.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-07-10 20:59:16 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 107ms (Views: 105.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/encomendas" for ::1 at 2017-07-10 20:59:20 -0300
+Processing by EncomendasController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mEncomenda Load (0.3ms)[0m  SELECT "encomendas".* FROM "encomendas"
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 112ms (Views: 109.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/encomendas/new" for ::1 at 2017-07-10 20:59:22 -0300
+Processing by EncomendasController#new as HTML
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mEndereco Load (0.7ms)[0m  [1mSELECT "enderecos".* FROM "enderecos"  ORDER BY "enderecos"."logradouro" ASC[0m
+  Rendered encomendas/_form.html.erb (15.4ms)
+  Rendered encomendas/new.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 129ms (Views: 125.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/encomendas" for ::1 at 2017-07-10 20:59:27 -0300
+Processing by EncomendasController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mEncomenda Load (0.2ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"[0m
+  [1m[35mEndereco Load (0.2ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered encomendas/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 124ms (Views: 121.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-07-10 20:59:30 -0300
+Processing by PedidosController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPedido Load (0.2ms)[0m  SELECT "pedidos".* FROM "pedidos"
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEncomenda Load (0.1ms)[0m  SELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEndereco Load (0.1ms)[0m  [1mSELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 111ms (Views: 108.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pedidos/new" for ::1 at 2017-07-10 20:59:31 -0300
+Processing by PedidosController#new as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProduto Load (0.4ms)[0m  [1mSELECT "produtos".* FROM "produtos"[0m
+  [1m[35mUsuario Load (0.3ms)[0m  SELECT "usuarios".* FROM "usuarios"  ORDER BY "usuarios"."email" ASC
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT "encomendas".* FROM "encomendas"  ORDER BY "encomendas"."dataentrega" ASC[0m
+  Rendered pedidos/_form.html.erb (11.6ms)
+  Rendered pedidos/new.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 135ms (Views: 111.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pedidos" for ::1 at 2017-07-10 20:59:39 -0300
+Processing by PedidosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPedido Load (0.2ms)[0m  [1mSELECT "pedidos".* FROM "pedidos"[0m
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEncomenda Load (0.1ms)[0m  [1mSELECT  "encomendas".* FROM "encomendas" WHERE "encomendas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEndereco Load (0.1ms)[0m  SELECT  "enderecos".* FROM "enderecos" WHERE "enderecos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pedidos/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 112ms (Views: 109.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-07-10 20:59:41 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ?  ORDER BY "usuarios"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 135ms (Views: 133.7ms | ActiveRecord: 0.2ms)

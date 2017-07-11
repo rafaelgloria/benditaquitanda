@@ -1,5 +1,6 @@
 class ItempedidosController < ApplicationController
   before_action :set_itempedido, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_usuario!
 
   # GET /itempedidos
   # GET /itempedidos.json

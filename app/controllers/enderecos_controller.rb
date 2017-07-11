@@ -1,5 +1,6 @@
 class EnderecosController < ApplicationController
   before_action :set_endereco, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_usuario!
 
   # GET /enderecos
   # GET /enderecos.json

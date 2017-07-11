@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'control_usuarios/index'
+
   resources :categorizacoes
   devise_for :usuarios
   resources :itempedidos

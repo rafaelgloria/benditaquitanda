@@ -38,6 +38,8 @@ gem 'twitter-bootstrap-rails'
 gem 'cocoon'
 # Autenticação
 gem 'devise'
+# Autorização
+gem 'pundit'
 
 
 # Use ActiveModel has_secure_password
