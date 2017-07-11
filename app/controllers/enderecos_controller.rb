@@ -6,6 +6,7 @@ class EnderecosController < ApplicationController
   # GET /enderecos.json
   def index
     @enderecos = Endereco.all
+    authorize @enderecos
   end
 
   # GET /enderecos/1

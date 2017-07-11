@@ -6,6 +6,7 @@ class CategorizacoesController < ApplicationController
   # GET /categorizacoes.json
   def index
     @categorizacoes = Categorizacao.all
+    authorize @categorizacoes
   end
 
   # GET /categorizacoes/1
