@@ -67,7 +67,7 @@ group :development do
 end
 
 group :production do
-	gem 'pg', '~> 0.20.0'
+	gem 'pg'
 end
 
 ruby "2.3.3"
