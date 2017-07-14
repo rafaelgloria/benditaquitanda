@@ -21,7 +21,7 @@
     <div class="form-group">
       <%= f.label :encomenda_id, class: 'col-sm-2 control-label' %>
       <div class="col-sm-8">
-        <%= f.collection_select :encomenda_id, Encomenda.order(:dataentrega),:id,:dataentrega, include_blank: true, class: 'form-control' %>
+        <%= f.collection_select :encomenda_id, Encomenda.order(:dataentrega),:id,:encomenda_com_endereco, include_blank: true, class: 'form-control' %>
       </div>
     </div>
     <div class="form-group">
@@ -37,7 +37,7 @@
       <div class="col-sm-8">
         <%= ff.number_field(:quantidade, in: 0..100) %>
         <%= ff.hidden_field :produto_id %>
-        <%= label_tag ff.object.produto.descricao %> - 
+        <%= label_tag ff.object.produto.unidade.nome %> - 
         <%= label_tag number_to_currency(ff.object.produto.valorunitario) %>
       </div>
     </div>

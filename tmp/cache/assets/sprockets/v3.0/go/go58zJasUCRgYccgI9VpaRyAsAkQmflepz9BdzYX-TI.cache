@@ -1,0 +1,5 @@
+I"\(function() {
+  document.getElementById("teste").className = "active";
+
+}).call(this);
+:ET

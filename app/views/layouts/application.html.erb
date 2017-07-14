@@ -23,30 +23,30 @@
      	<%= link_to 'Bendita Quitanda', root_path, class: "navbar-brand" %>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
       <ul class="nav navbar-nav">
         <% if current_usuario and current_usuario.admin? %>
-        <li class="active">
+        <li class="<%= 'active' if current_page?(categorizacoes_path) %>">
         	<%= link_to 'Categorias', categorizacoes_path %>
         </li>
-        <li >
+        <li class="<%= 'active' if current_page?(encomendas_path) %>">
         	<%= link_to 'Encomendas', encomendas_path %>
         </li>
-        <li >
+        <li class="<%= 'active' if current_page?(enderecos_path) %>">
         	<%= link_to 'Endereços', enderecos_path %>
         </li>
         <% end %>
-        <li >
+        <li class="<%= 'active' if current_page?(pedidos_path) %>">
         	<%= link_to 'Pedidos', pedidos_path %>
         </li>
         <% if current_usuario and current_usuario.admin? %>
-        <li >
+        <li class="<%= 'active' if current_page?(produtos_path) %>">
         	<%= link_to 'Produtos', produtos_path %>
         </li>
-        <li >
+        <li class="<%= 'active' if current_page?(unidades_path) %>">
         	<%= link_to 'Unidades', unidades_path %>
         </li>
-        <li >
+        <li class="<%= 'active' if current_page?(control_usuarios_index_path) %>">
           <%= link_to 'Usuários', control_usuarios_index_path %>
         </li>
         <% end %>
