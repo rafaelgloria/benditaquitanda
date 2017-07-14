@@ -6,6 +6,7 @@ class ProdutosController < ApplicationController
   # GET /produtos.json
   def index
     @produtos = Produto.all
+    authorize @produtos
   end
 
   # GET /produtos/1

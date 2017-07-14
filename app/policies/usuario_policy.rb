@@ -1,7 +1,7 @@
 class UsuarioPolicy < ApplicationPolicy
 
   def index?
-  	usuario.admin?
+  	user.admin?
   end
 
   class Scope < Scope

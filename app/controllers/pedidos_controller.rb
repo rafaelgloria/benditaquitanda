@@ -5,7 +5,14 @@ class PedidosController < ApplicationController
   # GET /pedidos
   # GET /pedidos.json
   def index
-    @pedidos = Pedido.all
+    if current_usuario.admin?
+      @pedidos = Pedido.all
+    else
+      @pedidos = Pedido.where usuario: current_usuario
+    end
+    if @pedidos == nil
+      @pedidos = Array.new()
+    end
   end
 
   # GET /pedidos/1

@@ -6,6 +6,7 @@ class EncomendasController < ApplicationController
   # GET /encomendas.json
   def index
     @encomendas = Encomenda.all
+    authorize @encomendas
   end
 
   # GET /encomendas/1
