@@ -15,7 +15,7 @@
     <div class="form-group">
       <%= f.label :usuario_id, class: 'col-sm-2 control-label' %>
       <div class="col-sm-8">
-        <%= f.collection_select :usuario_id, Usuario.order(:email),:id,:email, include_blank: true, disabled: true, :selected => current_usuario.id, class: 'form-control' %>
+        <%= f.collection_select :usuario_id, Usuario.order(:email),:id,:email, include_blank: false, disabled: true, :selected => current_usuario.id, class: 'form-control' %>
       </div>
     </div>
     <div class="form-group">

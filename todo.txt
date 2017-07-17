@@ -1,0 +1,12 @@
+
+- Cadastro de Usuários
+	- CRUD com mais campos
+	- Incluir endereço no Usuário (para facilitar o pedido, já vindo com o endereço marcado)
+
+- Cadastro de Pedidos
+	- Usuario, sempre vir marcado com o usuário logado e não deixar mudar, só para as roles admin que pode tudo (*)
+	- Encomenda, sempre vir com as encomendas abertas (Data Início e Data Fim vigentes) (*)
+
+- Relatórios
+	- Produtos pedidos e suas quantidades, por Encomenda (endereço) - serve para a separação dos produto (*)
+	- Produtos pedidos e suas quantidades, por Usuário - serve para a separação das sacolas
