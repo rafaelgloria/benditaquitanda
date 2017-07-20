@@ -15,13 +15,13 @@
     <div class="form-group">
       <%= f.label :usuario_id, class: 'col-sm-2 control-label' %>
       <div class="col-sm-8">
-        <%= f.collection_select :usuario_id, Usuario.order(:email),:id,:email, include_blank: false, disabled: true, :selected => current_usuario.id, class: 'form-control' %>
+        <%= f.collection_select :usuario_id, @usuarios,:id,:email, include_blank: false, disabled: true, :selected => current_usuario.id, class: 'form-control' %>
       </div>
     </div>
     <div class="form-group">
       <%= f.label :encomenda_id, class: 'col-sm-2 control-label' %>
       <div class="col-sm-8">
-        <%= f.collection_select :encomenda_id, Encomenda.order(:dataentrega),:id,:encomenda_com_endereco, include_blank: true, class: 'form-control' %>
+        <%= f.collection_select :encomenda_id, @encomendas,:id,:encomenda_com_endereco, include_blank: false, class: 'form-control' %>
       </div>
     </div>
     <div class="form-group">
@@ -39,6 +39,7 @@
         <%= ff.hidden_field :produto_id %>
         <%= label_tag ff.object.produto.unidade.nome %> - 
         <%= label_tag number_to_currency(ff.object.produto.valorunitario) %>
+        - <%= label_tag ff.object.produto.categorizacao.nome %>
       </div>
     </div>
     <% end %>

@@ -4,8 +4,11 @@
 	- Incluir endereço no Usuário (para facilitar o pedido, já vindo com o endereço marcado)
 
 - Cadastro de Pedidos
-	- Usuario, sempre vir marcado com o usuário logado e não deixar mudar, só para as roles admin que pode tudo (*)
-	- Encomenda, sempre vir com as encomendas abertas (Data Início e Data Fim vigentes) (*)
+	- Usuario, sempre vir marcado com o usuário logado e não deixar mudar, só para as roles admin que pode tudo (19/07/2017)
+	- Encomenda, sempre vir com as encomendas abertas (Data Limite pedido) (19/07/2017)
+	- Só deixar editar e excluir os pedidos abertos, ou seja, com data da encomenda vigente (19/07/2017)
+	- Separar os produtos por categoria
+
 
 - Relatórios
 	- Produtos pedidos e suas quantidades, por Encomenda (endereço) - serve para a separação dos produto (*)

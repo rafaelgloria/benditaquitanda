@@ -23,13 +23,17 @@ class PedidosController < ApplicationController
   # GET /pedidos/new
   def new
     @pedido = Pedido.new
-    Produto.all.each do |prod|
+    Produto.all.order(:nome).each do |prod|
       @pedido.itempedidos.build(quantidade: 0, produto: prod)
     end
+    set_usuarios
+    @encomendas = Encomenda.where("datalimitepedido >= ?", DateTime.now).order(:datalimitepedido)
   end
 
   # GET /pedidos/1/edit
   def edit
+    set_usuarios
+    @encomendas = Encomenda.all
   end
 
   # POST /pedidos
@@ -80,6 +84,15 @@ class PedidosController < ApplicationController
   end
 
   private
+    # buscar os usuarios para a combo de usuarios
+    def set_usuarios
+      if current_usuario.admin?
+        @usuarios = Usuario.all
+      else
+        @usuarios = Usuario.where("email = ?", current_usuario.email)
+      end
+    end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_pedido
       @pedido = Pedido.find(params[:id])

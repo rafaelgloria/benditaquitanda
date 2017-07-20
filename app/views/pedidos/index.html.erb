@@ -16,10 +16,15 @@
       <% @pedidos.each do |pedido| %>
         <tr>
           <td><%= pedido.usuario.email %></td>
-          <td><%= pedido.encomenda.endereco.logradourocomnumero %></td>
+          <td><%= pedido.encomenda.encomenda_com_endereco %></td>
           <td><%= link_to t(:detalhar), pedido %></td>
-          <td><%= link_to t(:editar), edit_pedido_path(pedido) %></td>
-          <td><%= link_to t(:excluir), pedido, method: :delete, data: { confirm: t(:confirmaexclusao) } %></td>
+          <% if pedido.encomenda.datalimitepedido >= DateTime.now %>
+            <td><%= link_to t(:editar), edit_pedido_path(pedido) %></td>
+            <td><%= link_to t(:excluir), pedido, method: :delete, data: { confirm: t(:confirmaexclusao) } %></td>
+          <% else %>
+            <td></td>
+            <td></td>
+          <% end %>
         </tr>
       <% end %>
     </tbody>
