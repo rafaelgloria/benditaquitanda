@@ -36,9 +36,11 @@
         	<%= link_to 'Endereços', enderecos_path %>
         </li>
         <% end %>
+        <% if current_usuario %>
         <li class="<%= 'active' if current_page?(pedidos_path) %>">
         	<%= link_to 'Pedidos', pedidos_path %>
         </li>
+        <% end %>
         <% if current_usuario and current_usuario.admin? %>
         <li class="<%= 'active' if current_page?(produtos_path) %>">
         	<%= link_to 'Produtos', produtos_path %>
