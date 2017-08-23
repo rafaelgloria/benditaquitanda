@@ -1,6 +1,6 @@
 
 - Cadastro de Usuários
-	- CRUD com mais campos
+	- CRUD com mais campos (Endereço)
 	- Incluir endereço no Usuário (para facilitar o pedido, já vindo com o endereço marcado)
 	- Incluir endereço da entrega no Usuário (enderecoEntrega) (*)
 
@@ -9,6 +9,7 @@
 	- Encomenda, sempre vir com as encomendas abertas (Data Limite pedido) (19/07/2017)
 	- Só deixar editar e excluir os pedidos abertos, ou seja, com data da encomenda vigente (19/07/2017)
 	- Separar os produtos por categoria 
+	- Totalizar pedidos em tempo real
 
 - Cadastro de Encomendas
 	- Associar Produtos em cada encomenda
