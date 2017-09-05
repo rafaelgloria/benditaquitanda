@@ -20,8 +20,13 @@
           <td><%= l(encomenda.dataentrega) %></td>
           <td><%= l(encomenda.datalimitepedido) %></td>
           <td><%= link_to t(:detalhar), encomenda %></td>
-          <td><%= link_to t(:editar), edit_encomenda_path(encomenda) %></td>
+          <% if encomenda.datalimitepedido >= DateTime.now %>
+            <td><%= link_to t(:editar), edit_encomenda_path(encomenda) %></td>
           <td><%= link_to t(:excluir), encomenda, method: :delete, data: { confirm: t(:confirmaexclusao) } %></td>
+          <% else %>
+            <td></td>
+            <td></td>
+            <% end %>
         </tr>
       <% end %>
     </tbody>

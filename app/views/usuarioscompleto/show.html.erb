@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>E-mail:</strong>
+  <%= @usuariocompleto.email %>
+</p>
+
+<%= link_to t(:detalhar), edit_usuarioscompleto_path(@usuariocompleto) %> |
+<%= link_to t(:voltar), usuarioscompleto_path %>

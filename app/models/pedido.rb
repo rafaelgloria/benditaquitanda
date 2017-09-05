@@ -4,4 +4,5 @@ class Pedido < ActiveRecord::Base
   has_many :itempedidos
 
   accepts_nested_attributes_for :itempedidos
+
 end

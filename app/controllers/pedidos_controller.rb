@@ -26,12 +26,14 @@ class PedidosController < ApplicationController
     Produto.all.order(:nome).each do |prod|
       @pedido.itempedidos.build(quantidade: 0, produto: prod)
     end
+    set_categorias
     set_usuarios
     @encomendas = Encomenda.where("datalimitepedido >= ?", DateTime.now).order(:datalimitepedido)
   end
 
   # GET /pedidos/1/edit
   def edit
+    set_categorias
     set_usuarios
     @encomendas = Encomenda.all
   end
@@ -91,6 +93,10 @@ class PedidosController < ApplicationController
       else
         @usuarios = Usuario.where("email = ?", current_usuario.email)
       end
+    end
+
+    def set_categorias
+      @categorias = Categorizacao.all
     end
 
     # Use callbacks to share common setup or constraints between actions.

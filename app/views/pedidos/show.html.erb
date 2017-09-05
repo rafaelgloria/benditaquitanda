@@ -2,13 +2,25 @@
 
 <p>
   <strong>Usuario:</strong>
-  <%= @pedido.usuario %>
+  <%= @pedido.usuario.email %>
 </p>
 
 <p>
   <strong>Encomenda:</strong>
-  <%= @pedido.encomenda %>
+  <%= @pedido.encomenda.encomenda_com_endereco %>
 </p>
+
+	<% total = 0 %>
+    <% @pedido.itempedidos.each do |ip| %>
+    <p>
+    	<%= ip.quantidade %> <%= ip.produto.nome %>(s) - 
+    	<%= number_to_currency(ip.produto.valorunitario) %> 
+	</p>
+		<% total = total + (ip.quantidade * ip.produto.valorunitario) %>
+	<% end %>
+	<p>
+		<strong>Total</strong> = <%= label_tag number_to_currency(total) %>
+	</p>
 
 <%= link_to t(:editar), edit_pedido_path(@pedido) %> |
 <%= link_to t(:voltar), pedidos_path %>

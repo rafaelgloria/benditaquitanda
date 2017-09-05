@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Usuários</h1>
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>E-mail</th>
+        <th colspan="2"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @usuarios.each do |usuario| %>
+        <tr>
+          <td><%= usuario.email %></td>
+          <td><%= link_to t(:detalhar), usuarioscompleto_path(usuario) %></td>
+          <td><%= link_to t(:editar), edit_usuarioscompleto_path(usuario) %></td>
+          <td><%= link_to t(:excluir), usuarioscompleto_path(usuario), method: :delete, data: { confirm: t(:confirmaexclusao) } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<br>
+
+<%= link_to 'Novo Usuário', new_usuarioscompleto_path %>

@@ -8,13 +8,15 @@
 	- Usuario, sempre vir marcado com o usuário logado e não deixar mudar, só para as roles admin que pode tudo (19/07/2017)
 	- Encomenda, sempre vir com as encomendas abertas (Data Limite pedido) (19/07/2017)
 	- Só deixar editar e excluir os pedidos abertos, ou seja, com data da encomenda vigente (19/07/2017)
-	- Separar os produtos por categoria 
+	- Separar os produtos por categoria (04/09/2017 - parcial)
+	- Totalizar pedidos (04/09/2017)
 	- Totalizar pedidos em tempo real
 
 - Cadastro de Encomendas
 	- Associar Produtos em cada encomenda
 
-
 - Relatórios
 	- Produtos pedidos e suas quantidades, por Encomenda (endereço) - serve para a separação dos produto (*)
 	- Produtos pedidos e suas quantidades, por Usuário - serve para a separação das sacolas
+
+- Melhorar interface com o usuário (*)
